@@ -1,5 +1,6 @@
 package sample;
 
+
 import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,14 +9,19 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Base64;
 
+import CertificateHandler.*;
+import JsonClasses.*;
 
 public class Main {
 
     public static void main(String[] argv) throws IOException {
-        ISomeService bob = new ISomeService();
+        CertificateHandler certhandle = new CertificateHandler();
         //System.out.println(httpGet("http://jsonplaceholder.typicode.com/posts/1", "myUser", "abc123"));
-        System.out.println(httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/count", "admin", "admin"));
+        System.out.println(httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin"));
         //System.out.println(authentication("Aladdin", "sesame open"));
+        String bob = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
+        JsonClasses.Client hej = new JsonClasses.Client();
+
     }
 
     public static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
@@ -64,8 +70,8 @@ public class Main {
 
     public static String authentication(String name, String password){
         String temp = name + ":" + password;
-        Base64.Encoder bob = Base64.getEncoder();
-        String temp2 = bob.encodeToString(temp.getBytes());
+        Base64.Encoder enc = Base64.getEncoder();
+        String temp2 = enc.encodeToString(temp.getBytes());
         return "Basic " + temp2;
     }
 }

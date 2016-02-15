@@ -1,4 +1,4 @@
-package sample;
+package CertificateHandler;
 
 import javax.net.ssl.*;
 import javax.security.cert.X509Certificate;
@@ -15,7 +15,7 @@ import java.security.cert.CertificateException;
  *
  * http://www.nakov.com/blog/2009/07/16/disable-certificate-validation-in-java-ssl-connections/
  */
-class ISomeService{
+public class CertificateHandler{
     static {
         disableSslVerification();
     }
