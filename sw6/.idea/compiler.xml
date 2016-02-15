@@ -17,7 +17,24 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="JSONread" />
+      </profile>
+      <profile default="false" name="Annotation profile for gson" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="gson" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gson" target="1.6" />
+      <module name="JSONread" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-

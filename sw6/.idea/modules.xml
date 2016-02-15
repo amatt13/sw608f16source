@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JSONread/JSONread.iml" filepath="$PROJECT_DIR$/JSONread/JSONread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gson/gson.iml" filepath="$PROJECT_DIR$/gson/gson.iml" />
       <module fileurl="file://$PROJECT_DIR$/sw6.iml" filepath="$PROJECT_DIR$/sw6.iml" />
     </modules>
   </component>

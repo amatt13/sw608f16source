@@ -1,7 +1,7 @@
 package sample;
 
+import CertificateHandler.CertificateHandler;
 
-import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -9,8 +9,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Base64;
 
-import CertificateHandler.*;
-import JsonClasses.*;
 
 public class Main {
 
@@ -21,6 +19,12 @@ public class Main {
         //System.out.println(authentication("Aladdin", "sesame open"));
         String bob = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
         JsonClasses.Client hej = new JsonClasses.Client();
+
+
+        /*JsonReader jsonReader = Json.createReader(...);
+        JsonObject object = jsonReader.readObject();
+        jsonReader.close();
+        JsonObject object = Json.createObjectBuilder().build();*/
 
     }
 
