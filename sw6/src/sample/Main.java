@@ -1,6 +1,9 @@
 package sample;
 
 import CertificateHandler.CertificateHandler;
+import JsonClasses.*;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,10 +24,10 @@ public class Main {
         JsonClasses.Client hej = new JsonClasses.Client();
 
 
-        /*JsonReader jsonReader = Json.createReader(...);
-        JsonObject object = jsonReader.readObject();
-        jsonReader.close();
-        JsonObject object = Json.createObjectBuilder().build();*/
+        Gson gson = new GsonBuilder().create();
+        Client p = gson.fromJson(bob, Client.class);
+        System.out.println(p);
+
 
     }
 
