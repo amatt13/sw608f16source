@@ -9,7 +9,7 @@ import javax.annotation.Generated;
 public class MapInfo {
 
     private String mapHierarchyString;
-    private Integer floorRefId;
+    private String floorRefId;
     private JsonClasses.Dimension Dimension;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -36,7 +36,7 @@ public class MapInfo {
      * @return
      *     The floorRefId
      */
-    public Integer getFloorRefId() {
+    public String getFloorRefId() {
         return floorRefId;
     }
 
@@ -45,7 +45,7 @@ public class MapInfo {
      * @param floorRefId
      *     The floorRefId
      */
-    public void setFloorRefId(Integer floorRefId) {
+    public void setFloorRefId(String floorRefId) {
         this.floorRefId = floorRefId;
     }
 
