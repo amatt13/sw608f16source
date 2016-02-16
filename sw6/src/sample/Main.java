@@ -24,9 +24,9 @@ public class Main {
         JsonClasses.Client hej = new JsonClasses.Client();
 
 
-        Gson gson = new GsonBuilder().create();
+        /*Gson gson = new GsonBuilder().create();
         Client p = gson.fromJson(bob, Client.class);
-        System.out.println(p);
+        System.out.println(p);*/
 
 
     }
