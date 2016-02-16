@@ -2,33 +2,38 @@ package sample;
 
 import CertificateHandler.CertificateHandler;
 import JsonClasses.*;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import ClientList.*;
+import com.google.gson.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Base64;
+import java.util.List;
 
 
 public class Main {
 
+    private static String ip;
+
     public static void main(String[] argv) throws IOException {
+        ip = getIP();
         CertificateHandler certhandle = new CertificateHandler();
-        //System.out.println(httpGet("http://jsonplaceholder.typicode.com/posts/1", "myUser", "abc123"));
-        System.out.println(httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin"));
-        //System.out.println(authentication("Aladdin", "sesame open"));
-        String bob = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
-        JsonClasses.Client hej = new JsonClasses.Client();
+
+        System.out.println(httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin"));
+
+        String bob = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
+        String bob1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
 
 
         Gson gson = new GsonBuilder().create();
-        Client p = gson.fromJson(bob, Client.class);
-        //System.out.println(p);
+        GetAll p = gson.fromJson(bob, GetAll.class);
 
 
+        Client m = RequestClient("00:00:2a:01:00:05");
     }
 
     public static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
@@ -72,7 +77,7 @@ public class Main {
             address = "0.0.0.0";
             System.out.println("IO error trying to read address");
         }
-        return address;
+        return "https://" + address;
     }
 
     public static String authentication(String name, String password){
@@ -80,5 +85,20 @@ public class Main {
         Base64.Encoder enc = Base64.getEncoder();
         String temp2 = enc.encodeToString(temp.getBytes());
         return "Basic " + temp2;
+    }
+
+    public static Client RequestClient(String mcAddressOrIP) throws IOException {
+
+        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/" + mcAddressOrIP, "admin", "admin");
+        Gson gson = new GsonBuilder().create();
+        Client result = gson.fromJson(requestresult, Client.class);
+        return result;
+    }
+
+    public static GetAll RequestAllClients() throws IOException{
+        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/", "admin", "admin");
+        Gson gson = new GsonBuilder().create();
+        GetAll result = gson.fromJson(requestresult, GetAll.class);
+        return result;
     }
 }
