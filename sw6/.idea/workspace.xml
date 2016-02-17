@@ -10,40 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MainProgram/TCPServer.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/ClientList/Dimension.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/ClientList/Entry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/ClientList/GetAll.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/ClientList/Locations.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/ClientList/MapCoordinate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/ClientList/MapInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/ClientList/Statistics.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/JsonClasses/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/JsonClasses/ClientList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/JsonClasses/Dimension.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/JsonClasses/MapCoordinate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/JsonClasses/MapInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/JsonClasses/Statistics.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/JsonClasses/WirelessClientLocation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/sample/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/sw6/sample/sample.fxml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ClientList/Dimension.java" afterPath="$PROJECT_DIR$/src/AllClient/Dimension.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ClientList/Entry.java" afterPath="$PROJECT_DIR$/src/AllClient/Entry.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ClientList/GetAll.java" afterPath="$PROJECT_DIR$/src/AllClient/AllClient.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ClientList/Locations.java" afterPath="$PROJECT_DIR$/src/AllClient/Locations.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ClientList/MapCoordinate.java" afterPath="$PROJECT_DIR$/src/AllClient/MapCoordinate.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ClientList/MapInfo.java" afterPath="$PROJECT_DIR$/src/AllClient/MapInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ClientList/Statistics.java" afterPath="$PROJECT_DIR$/src/AllClient/Statistics.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JsonClasses/Client.java" afterPath="$PROJECT_DIR$/src/SingleClient/Client.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JsonClasses/ClientList.java" afterPath="$PROJECT_DIR$/src/SingleClient/ClientList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JsonClasses/Dimension.java" afterPath="$PROJECT_DIR$/src/SingleClient/Dimension.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JsonClasses/MapCoordinate.java" afterPath="$PROJECT_DIR$/src/SingleClient/MapCoordinate.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JsonClasses/MapInfo.java" afterPath="$PROJECT_DIR$/src/SingleClient/MapInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JsonClasses/Statistics.java" afterPath="$PROJECT_DIR$/src/SingleClient/Statistics.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/JsonClasses/WirelessClientLocation.java" afterPath="$PROJECT_DIR$/src/SingleClient/WirelessClientLocation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/MainProgram/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sample/sample.fxml" afterPath="$PROJECT_DIR$/src/MainProgram/sample.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MainProgram/TCPServer.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainProgram/Main.java" afterPath="$PROJECT_DIR$/src/MainProgram/Main.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,24 +82,22 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainProgram/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.305618">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7685393">
+              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#421#429#0" expanded="true" />
+                <element signature="e#508#516#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TCPServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainProgram/TCPServer.java">
+      <file leaf-file-name="Gson.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/src/gson-2.6.1.jar!/com/google/gson/Gson.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="34.37037">
+              <caret line="474" column="42" selection-start-line="474" selection-start-column="42" selection-end-line="474" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -265,8 +231,8 @@
         <option value="$PROJECT_DIR$/src/ClientList/AllClients.java" />
         <option value="$PROJECT_DIR$/src/AllClient/AllClients.java" />
         <option value="$PROJECT_DIR$/src/AllClient/AllClient.java" />
-        <option value="$PROJECT_DIR$/src/MainProgram/Main.java" />
         <option value="$PROJECT_DIR$/src/MainProgram/TCPServer.java" />
+        <option value="$PROJECT_DIR$/src/MainProgram/Main.java" />
       </list>
     </option>
   </component>
@@ -500,7 +466,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TCPServer">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="TCPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1006,12 +972,12 @@
       <workItem from="1455613713639" duration="719000" />
       <workItem from="1455614480348" duration="1141000" />
       <workItem from="1455615934248" duration="17000" />
-      <workItem from="1455624125125" duration="21051000" />
+      <workItem from="1455624125125" duration="23485000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38505000" />
+    <option name="totallyTimeSpent" value="40939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-920" width="1066" height="1656" extended-state="6" />
@@ -1092,7 +1058,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1117,7 +1083,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1164,7 +1130,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1228,7 +1194,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1273,7 +1239,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1301,7 +1267,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1312,7 +1278,7 @@
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1340,7 +1306,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1361,7 +1327,7 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1571,23 +1537,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainProgram/TCPServer.java">
+    <entry file="jar://$PROJECT_DIR$/src/gson-2.6.1.jar!/com/google/gson/Gson.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="34.37037">
+          <caret line="474" column="42" selection-start-line="474" selection-start-column="42" selection-end-line="474" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainProgram/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.305618">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7685393">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#421#429#0" expanded="true" />
+            <element signature="e#508#516#0" expanded="true" />
           </folding>
         </state>
       </provider>

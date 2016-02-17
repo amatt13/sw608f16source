@@ -6,9 +6,12 @@ import AllClient.*;
 import com.google.gson.*;
 
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.net.URL;
 import java.util.*;
 
@@ -23,13 +26,30 @@ public class Main {
         ip = "64.103.26.61"; // getIP();
         new CertificateHandler();
         CollectSingleClient("admin","admin","00:00:2a:01:00:05", "https://64.103.26.61");
+        CollectAllClients("admin", "admin", "https://64.103.26.61");
 
 
-        System.out.println(httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin"));
+        //System.out.println(httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin"));
 
-        String bob = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
-        String bob1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
+        //String bob = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
+        //String bob1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
 
+        String clientSentence;
+        String capitalizedSentence;
+        try {
+            ServerSocket welcomeSocket = new ServerSocket(6789);
+            while (true) {
+                Socket connectionSocket = welcomeSocket.accept();
+                BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
+                DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
+                clientSentence = inFromClient.readLine();
+                System.out.println("Received: " + clientSentence);
+                capitalizedSentence = clientSentence.toUpperCase() + '\n';
+                outToClient.writeBytes(capitalizedSentence);
+            }
+        }catch (IOException bei){
+            System.out.println("fuck");
+        }
     }
 
     private static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
@@ -123,10 +143,20 @@ public class Main {
         return clientlist;
     }
 
+    //public <T> T fromJson(String json, Class<T> classOfT) throws JsonSyntaxException {
+
+
+    private static <T> String ConvertToJson(T classOfT){
+        Gson gson = new GsonBuilder().create();
+        String bob = gson.toJson(classOfT);
+        return bob;
+    }
+
     public static void CollectSingleClient(String username, String password, String userID, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/" + userID, username, password);
         Client client = ReadJsonToClient(requestresult);
         client = ObfuscateMacAddress(client);
+        System.out.println(ConvertToJson(client));
 
         //Here we need to decide if we send a java object, a string or a json to the DB.
     }
@@ -135,7 +165,7 @@ public class Main {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/", username, password);
         AllClient allClient = ReadJsonToClientList(requestresult);
         allClient = ObfuscateMacAddress(allClient);
-
+        System.out.println(ConvertToJson(allClient));
         //Here we need to decide if we send a java object, a string or a json to the DB.
     }
 }
