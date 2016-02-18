@@ -23,7 +23,7 @@ public class Main {
 
 
     public static void main(String[] argv) throws IOException {
-        ip = "64.103.26.61"; // getIP();
+        ip = getIP();
         new CertificateHandler();
         CollectSingleClient("admin","admin","00:00:2a:01:00:05", "https://64.103.26.61");
         CollectAllClients("admin", "admin", "https://64.103.26.61");
@@ -31,9 +31,11 @@ public class Main {
 
         //System.out.println(httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin"));
 
-        //String bob = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
-        //String bob1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
+        //String test1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
+        //String test2 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
 
+
+        // !!SERVER PART:!!
         String clientSentence;
         String capitalizedSentence;
         try {
@@ -47,8 +49,8 @@ public class Main {
                 capitalizedSentence = clientSentence.toUpperCase() + '\n';
                 outToClient.writeBytes(capitalizedSentence);
             }
-        }catch (IOException bei){
-            System.out.println("fuck");
+        }catch (IOException exception){
+            System.out.println("Connection failed");
         }
     }
 
@@ -131,19 +133,24 @@ public class Main {
         macAddressDB.add(macaddress);
     }
 
+    public static void RemoveMacAddressToWatchList(String macaddress) {
+        //Here we need to verify that the input parameter is a valid address.
+        macAddressDB.remove(macaddress);
+    }
+
+    // Convert json string to a Java class.
     private static Client ReadJsonToClient(String json){
         Gson gson = new GsonBuilder().create();
         Client client = gson.fromJson(json, Client.class);
         return client;
     }
 
+    // Convert json string to a Java class.
     private static AllClient ReadJsonToClientList(String json){
         Gson gson = new GsonBuilder().create();
         AllClient clientlist = gson.fromJson(json, AllClient.class);
         return clientlist;
     }
-
-    //public <T> T fromJson(String json, Class<T> classOfT) throws JsonSyntaxException {
 
 
     private static <T> String ConvertToJson(T classOfT){
@@ -152,6 +159,7 @@ public class Main {
         return bob;
     }
 
+    // Method to cconnect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
     public static void CollectSingleClient(String username, String password, String userID, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/" + userID, username, password);
         Client client = ReadJsonToClient(requestresult);
@@ -161,6 +169,7 @@ public class Main {
         //Here we need to decide if we send a java object, a string or a json to the DB.
     }
 
+    // Method to cconnect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
     public static void CollectAllClients(String username, String password, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/", username, password);
         AllClient allClient = ReadJsonToClientList(requestresult);

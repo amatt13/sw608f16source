@@ -19,9 +19,9 @@ public class Entry {
     private String apMacAddress;
     private Boolean isGuestUser;
     private String dot11Status;
-    private AllClient.MapInfo MapInfo;
-    private AllClient.MapCoordinate MapCoordinate;
-    private AllClient.Statistics Statistics;
+    private MapInfo MapInfo;
+    private MapCoordinate MapCoordinate;
+    private Statistics Statistics;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
@@ -191,7 +191,7 @@ public class Entry {
      * @return
      *     The MapInfo
      */
-    public AllClient.MapInfo getMapInfo() {
+    public MapInfo getMapInfo() {
         return MapInfo;
     }
 
@@ -200,7 +200,7 @@ public class Entry {
      * @param MapInfo
      *     The MapInfo
      */
-    public void setMapInfo(AllClient.MapInfo MapInfo) {
+    public void setMapInfo(MapInfo MapInfo) {
         this.MapInfo = MapInfo;
     }
 
@@ -209,7 +209,7 @@ public class Entry {
      * @return
      *     The MapCoordinate
      */
-    public AllClient.MapCoordinate getMapCoordinate() {
+    public MapCoordinate getMapCoordinate() {
         return MapCoordinate;
     }
 
@@ -218,7 +218,7 @@ public class Entry {
      * @param MapCoordinate
      *     The MapCoordinate
      */
-    public void setMapCoordinate(AllClient.MapCoordinate MapCoordinate) {
+    public void setMapCoordinate(MapCoordinate MapCoordinate) {
         this.MapCoordinate = MapCoordinate;
     }
 
@@ -227,7 +227,7 @@ public class Entry {
      * @return
      *     The Statistics
      */
-    public AllClient.Statistics getStatistics() {
+    public Statistics getStatistics() {
         return Statistics;
     }
 
@@ -236,7 +236,7 @@ public class Entry {
      * @param Statistics
      *     The Statistics
      */
-    public void setStatistics(AllClient.Statistics Statistics) {
+    public void setStatistics(Statistics Statistics) {
         this.Statistics = Statistics;
     }
 

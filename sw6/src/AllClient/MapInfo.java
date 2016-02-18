@@ -10,7 +10,7 @@ public class MapInfo {
 
     private String mapHierarchyString;
     private String floorRefId;
-    private AllClient.Dimension Dimension;
+    private Dimension Dimension;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
@@ -54,7 +54,7 @@ public class MapInfo {
      * @return
      *     The Dimension
      */
-    public AllClient.Dimension getDimension() {
+    public Dimension getDimension() {
         return Dimension;
     }
 
@@ -63,7 +63,7 @@ public class MapInfo {
      * @param Dimension
      *     The Dimension
      */
-    public void setDimension(AllClient.Dimension Dimension) {
+    public void setDimension(Dimension Dimension) {
         this.Dimension = Dimension;
     }
 
