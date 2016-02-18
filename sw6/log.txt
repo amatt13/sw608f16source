@@ -1,0 +1,3 @@
+0      2016-02-18 16:20:03,465 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:451).start() - Starting proxy at address: /127.0.0.1:8080
+470    2016-02-18 16:20:03,935 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:480).doStart() - Proxy listening with TCP transport
+970    2016-02-18 16:20:04,435 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:515).doStart() - Proxy started at address: /127.0.0.1:8080

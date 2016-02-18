@@ -46,6 +46,7 @@
       <list>
         <option value="$PROJECT_DIR$/JSONread/pom.xml" />
         <option value="$PROJECT_DIR$/gson/pom.xml" />
+        <option value="$PROJECT_DIR$/src/LittleProxy/pom.xml" />
       </list>
     </option>
   </component>

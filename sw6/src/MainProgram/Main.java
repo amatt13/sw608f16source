@@ -15,6 +15,12 @@ import java.net.Socket;
 import java.net.URL;
 import java.util.*;
 
+import com.sun.deploy.net.HttpRequest;
+import com.sun.deploy.net.HttpResponse;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.http.HttpObject;
+import org.littleshoot.proxy.*;
+import org.littleshoot.proxy.impl.DefaultHttpProxyServer;
 
 public class Main {
 
@@ -23,7 +29,7 @@ public class Main {
 
 
     public static void main(String[] argv) throws IOException {
-        ip = getIP();
+        ip = "https://64.103.26.61";
         new CertificateHandler();
         CollectSingleClient("admin","admin","00:00:2a:01:00:05", "https://64.103.26.61");
         CollectAllClients("admin", "admin", "https://64.103.26.61");
@@ -33,9 +39,11 @@ public class Main {
 
         //String test1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
         //String test2 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
+        HttpProxyServer server =
+                DefaultHttpProxyServer.bootstrap()
+                        .withPort(8080).start();
 
-
-        // !!SERVER PART:!!
+       /* // !!SERVER PART:!!
         String clientSentence;
         String capitalizedSentence;
         try {
@@ -51,7 +59,7 @@ public class Main {
             }
         }catch (IOException exception){
             System.out.println("Connection failed");
-        }
+        }*/
     }
 
     private static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {

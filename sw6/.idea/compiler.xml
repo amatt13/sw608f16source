@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="JSONread" />
+        <module name="sw6" />
       </profile>
       <profile default="false" name="Annotation profile for gson" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -31,10 +32,20 @@
         <processorPath useClasspath="true" />
         <module name="gson" />
       </profile>
+      <profile default="false" name="Annotation profile for littleproxy" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="littleproxy" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gson" target="1.6" />
       <module name="JSONread" target="1.5" />
+      <module name="littleproxy" target="1.6" />
+      <module name="proxy" target="1.5" />
+      <module name="sw6" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
