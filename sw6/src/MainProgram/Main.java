@@ -9,18 +9,18 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.URL;
+import java.net.*;
 import java.util.*;
 
-import com.sun.deploy.net.HttpRequest;
-import com.sun.deploy.net.HttpResponse;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.handler.codec.http.HttpObject;
-import org.littleshoot.proxy.*;
+
+import io.netty.handler.codec.http.*;
+import org.littleshoot.proxy.HttpFiltersAdapter;
+import org.littleshoot.proxy.HttpFiltersSourceAdapter;
+import org.littleshoot.proxy.HttpProxyServer;
 import org.littleshoot.proxy.impl.DefaultHttpProxyServer;
+import org.littleshoot.proxy.impl.ClientToProxyConnection;
+import org.littleshoot.proxy.HttpFilters;
 
 public class Main {
 
@@ -31,18 +31,45 @@ public class Main {
     public static void main(String[] argv) throws IOException {
         ip = "https://64.103.26.61";
         new CertificateHandler();
-        CollectSingleClient("admin","admin","00:00:2a:01:00:05", "https://64.103.26.61");
-        CollectAllClients("admin", "admin", "https://64.103.26.61");
+        //CollectSingleClient("admin","admin","00:00:2a:01:00:05", "https://64.103.26.61");
+        //CollectAllClients("admin", "admin", "https://64.103.26.61");
 
 
         //System.out.println(httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin"));
 
         //String test1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
         //String test2 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients/00:00:2a:01:00:05", "admin", "admin");
-        HttpProxyServer server =
-                DefaultHttpProxyServer.bootstrap()
-                        .withPort(8080).start();
 
+        HttpFiltersSourceAdapter bob = new HttpFiltersSourceAdapter() {
+            public HttpFilters filterRequest(HttpRequest originalRequest, ChannelHandlerContext ctx) {
+                return new HttpFiltersAdapter(originalRequest) {
+                    @Override
+                    public HttpResponse clientToProxyRequest(HttpObject httpObject) {
+                        // TODO: implement your filtering here
+                        System.out.println(httpObject);
+                        String test1 = null;
+                        try {
+                            test1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        DefaultHttpResponse bob = new DefaultHttpResponse(new HttpVersion("uiiu",16, 0, false),new HttpResponseStatus(202, test1) );
+                        return bob;
+                    }
+
+                    @Override
+                    public HttpObject serverToProxyResponse(HttpObject httpObject) {
+                        // TODO: implement your filtering here
+                        return httpObject;
+                    }
+                };
+            }
+        };
+
+        HttpProxyServer server =
+                DefaultHttpProxyServer.bootstrap().withAddress(new InetSocketAddress("172.26.120.105", 8080)).withFiltersSource(bob).
+                        start();
+        System.out.println(server.getListenAddress());
        /* // !!SERVER PART:!!
         String clientSentence;
         String capitalizedSentence;

@@ -13,5 +13,6 @@
     <orderEntry type="module" module-name="littleproxy" />
     <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.0.23.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport:4.0.23.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-remote-driver:2.46.0" level="project" />
   </component>
 </module>

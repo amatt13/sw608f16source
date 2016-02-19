@@ -1,3 +1,4 @@
-0      2016-02-18 16:20:03,465 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:451).start() - Starting proxy at address: /127.0.0.1:8080
-470    2016-02-18 16:20:03,935 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:480).doStart() - Proxy listening with TCP transport
-970    2016-02-18 16:20:04,435 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:515).doStart() - Proxy started at address: /127.0.0.1:8080
+0      2016-02-19 14:46:17,962 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:451).start() - Starting proxy at address: /172.26.120.105:8080
+148    2016-02-19 14:46:18,110 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:480).doStart() - Proxy listening with TCP transport
+543    2016-02-19 14:46:18,505 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:515).doStart() - Proxy started at address: /172.26.120.105:8080
+818898 2016-02-19 14:59:56,860 INFO  [LittleProxy-0-ClientToProxyWorker-7] impl.ClientToProxyConnection (ClientToProxyConnection.java:730).exceptionCaught() - (AWAITING_INITIAL) [id: 0x532eb587, /172.26.120.61:64701 => /172.26.120.105:8080]: An IOException occurred on ClientToProxyConnection: An existing connection was forcibly closed by the remote host
