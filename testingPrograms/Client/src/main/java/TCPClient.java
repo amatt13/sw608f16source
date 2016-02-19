@@ -6,20 +6,22 @@ class TCPClient {
         String sentence;
         String modifiedSentence;
 
-        Socket clientSocket = new Socket("172.26.120.105", 8080);
 
-            DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
-            BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
+// BufferedReader inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+
+        String inFromUser;
         for(int i = 0; i < 500;i++){
-            String inFromUser = "Test " + i;
+            Socket clientSocket = new Socket("172.26.120.105", 8080);
+            DataOutputStream outToServer = new DataOutputStream(clientSocket.getOutputStream());
+            inFromUser = "Test " + i;
             sentence = inFromUser;
             outToServer.writeBytes(sentence + '\n');
- //           modifiedSentence = inFromServer.readLine();
-            Thread.sleep(100);
+//           modifiedSentence = inFromServer.readLine();
+            Thread.sleep(10);
             System.out.println(i);
+            clientSocket.close();
         }
 //        System.out.println("FROM SERVER: " + modifiedSentence);
-        clientSocket.close();
     }
 }
