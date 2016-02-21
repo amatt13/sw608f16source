@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/src/LittleProxy/littleproxy.iml" filepath="$PROJECT_DIR$/src/LittleProxy/littleproxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/LittleProxy/littleproxy.iml" filepath="$PROJECT_DIR$/src/LittleProxy/littleproxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/sw6.iml" filepath="$PROJECT_DIR$/sw6.iml" />
     </modules>
   </component>

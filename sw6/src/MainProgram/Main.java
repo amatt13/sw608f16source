@@ -12,15 +12,18 @@ import java.io.InputStreamReader;
 import java.net.*;
 import java.util.*;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
-
 import io.netty.handler.codec.http.*;
-import org.littleshoot.proxy.HttpFiltersAdapter;
-import org.littleshoot.proxy.HttpFiltersSourceAdapter;
-import org.littleshoot.proxy.HttpProxyServer;
+import io.netty.util.CharsetUtil;
+import org.apache.http.HttpEntity;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.ProxyAuthenticationStrategy;
+import org.littleshoot.proxy.*;
 import org.littleshoot.proxy.impl.DefaultHttpProxyServer;
 import org.littleshoot.proxy.impl.ClientToProxyConnection;
-import org.littleshoot.proxy.HttpFilters;
 
 public class Main {
 
@@ -45,16 +48,21 @@ public class Main {
                 return new HttpFiltersAdapter(originalRequest) {
                     @Override
                     public HttpResponse clientToProxyRequest(HttpObject httpObject) {
-                        // TODO: implement your filtering here
-                        System.out.println(httpObject);
+                        //System.out.println(originalRequest);
+                        //System.out.println(httpObject);
+                        DefaultHttpRequest test = (DefaultHttpRequest)httpObject;
+
+                        System.out.println(test.headers().get("Authorization"));
+
                         String test1 = null;
                         try {
                             test1 = httpGet("https://64.103.26.61/api/contextaware/v1/location/clients", "admin", "admin");
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-                        DefaultHttpResponse bob = new DefaultHttpResponse(new HttpVersion("uiiu",16, 0, false),new HttpResponseStatus(202, test1) );
-                        return bob;
+                        DefaultFullHttpResponse bob1 = new DefaultFullHttpResponse(new HttpVersion("HTTP", 1, 0, false), new HttpResponseStatus(200, test1), Unpooled.copiedBuffer("??: " + "FUCK"
+                                + "\r\n", CharsetUtil.UTF_8) );
+                        return bob1;
                     }
 
                     @Override
@@ -65,28 +73,21 @@ public class Main {
                 };
             }
         };
+        ProxyAuthenticator auth = new ProxyAuthenticator() {
+            public boolean authenticate(String userName, String password) {
+                System.out.println("Usernamepw: " + userName + "   " + password);
+                if (userName.equals("test") && password.equals("works"))
+                    return true;
+                return true;
+            }
+        };
 
         HttpProxyServer server =
-                DefaultHttpProxyServer.bootstrap().withAddress(new InetSocketAddress("172.26.120.105", 8080)).withFiltersSource(bob).
+                DefaultHttpProxyServer.bootstrap().withAddress(new InetSocketAddress("10.0.0.2", 8080)).withFiltersSource(bob).withTransparent(true).
                         start();
+
         System.out.println(server.getListenAddress());
-       /* // !!SERVER PART:!!
-        String clientSentence;
-        String capitalizedSentence;
-        try {
-            ServerSocket welcomeSocket = new ServerSocket(6789);
-            while (true) {
-                Socket connectionSocket = welcomeSocket.accept();
-                BufferedReader inFromClient = new BufferedReader(new InputStreamReader(connectionSocket.getInputStream()));
-                DataOutputStream outToClient = new DataOutputStream(connectionSocket.getOutputStream());
-                clientSentence = inFromClient.readLine();
-                System.out.println("Received: " + clientSentence);
-                capitalizedSentence = clientSentence.toUpperCase() + '\n';
-                outToClient.writeBytes(capitalizedSentence);
-            }
-        }catch (IOException exception){
-            System.out.println("Connection failed");
-        }*/
+
     }
 
     private static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
