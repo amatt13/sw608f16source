@@ -8,6 +8,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.InetSocketAddress;
 import java.net.URL;
+import java.nio.charset.Charset;
 import java.util.Base64;
 import java.util.LinkedList;
 import java.util.TreeSet;
@@ -29,7 +30,7 @@ public class HelloWorld {
 
     public static void main(String[] args) throws IOException {
         new CertificateHandler();
-        HttpServer server = HttpServer.create(new InetSocketAddress("172.26.120.105", 8080), 1);
+        HttpServer server = HttpServer.create(new InetSocketAddress("10.0.0.2", 8080), 1);
         server.createContext("/api/contextaware/v1/location/clients", new HttpHandler() {
             @Override
             public void handle(HttpExchange httpExchange) throws IOException {
@@ -39,7 +40,8 @@ public class HelloWorld {
 
                 httpExchange.sendResponseHeaders(200, response.length());
                 OutputStream os = httpExchange.getResponseBody();
-                PrintWriter printer = new PrintWriter(os);
+                os.write(response.getBytes(Charset.forName("UTF-8")));
+                PrintWriter printer = new PrintWriter(os, true);
                 printer.write(response);
                 os.close();
             }
@@ -48,19 +50,18 @@ public class HelloWorld {
         server.createContext("/api/contextaware/v1/location/clients/", new HttpHandler() {
             @Override
             public void handle(HttpExchange httpExchange) throws IOException {
-
+                System.out.println("Received request from " + httpExchange.getRemoteAddress().getAddress());
                 diff_match_patch bo = new diff_match_patch();
                 LinkedList<diff_match_patch.Diff> l = bo.diff_main(httpExchange.getRequestURI().getPath(),httpExchange.getHttpContext().getPath());
                 System.out.println(l.peekLast().text);
                 /// HERE IS RESPONSE
 
                 String response = CollectSingleClient("admin", "admin",l.peekLast().text, "https://64.103.26.61");
+
                 httpExchange.sendResponseHeaders(200, response.length());
-                OutputStream os2 = httpExchange.getResponseBody();
-                PrintWriter printer2 = new PrintWriter(os2);
-                printer2.write(response);
-                printer2.write("kkkkkkkkk");
-                os2.close();
+                OutputStream os = httpExchange.getResponseBody();
+                os.write(response.getBytes(Charset.forName("UTF-8")));
+                os.close();
             }
         });
 
