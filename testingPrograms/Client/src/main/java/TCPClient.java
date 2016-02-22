@@ -24,8 +24,8 @@ class TCPClient {
             clientSocket.close();
                 */
 
-            System.out.println("FROM SERVER: " + httpGet("http://10.0.0.2:8080", "test", "works"));
-        //
+            System.out.println("FROM SERVER: " + httpGet("http://172.26.120.105:8080/api/contextaware/v1/location/clients/00:00:2a:01:00:0a", "test", "works"));
+
     }
     private static String Authentication(String name, String password) {
         String temp = name + ":" + password;
