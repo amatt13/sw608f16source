@@ -1,4 +1,4 @@
-package example;
+package CiscoDataTransfer;
 
 import AllClient.AllClient;
 import SingleClient.Client;
@@ -14,14 +14,12 @@ import com.google.gson.*;
  * Created by Anders on 22-02-16.
  */
 public class CiscoClient {
-  public static void main(String[] argv) {
-      AutoPull autoPull = new AutoPull();
-      Thread appRequest = new Thread();
+    public static void main(String[] argv) {
+        CiscoPuller ciscoPuller = new CiscoPuller();
 
-      autoPull.start();
-      appRequest.start();
-
-  }
+        // This thread pulls data from Cisco and stores it on the Database
+        ciscoPuller.start();
+    }
 
     // Pull data from VPN server
     protected static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {

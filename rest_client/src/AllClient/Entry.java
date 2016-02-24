@@ -24,8 +24,58 @@ public class Entry {
     private Statistics Statistics;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+    @Override public String toString() {
+        StringBuilder sb = new StringBuilder();
+        StringBuilder ipHelper = new StringBuilder();
+
+        for(String s : this.getIpAddress()) ipHelper.append(s);
+
+        sb.append("apMacAdress" +
+                this.getApMacAddress() + "\n");
+        sb.append("macAddress" +
+                this.getMacAddress() + "\n");
+        sb.append("ipAdress" +
+                ipHelper.toString() + "\n");
+        sb.append("confidenceFactor" +
+                this.getConfidenceFactor().toString() + "\n");
+        sb.append("isGuestUser" +
+                this.getIsGuestUser().toString() + "\n");
+        sb.append("currentlyTracked" +
+                this.getCurrentlyTracked().toString() + "\n");
+        sb.append("mapHierarchyString" +
+                this.getMapInfo().getMapHierarchyString() + "\n");
+        sb.append("floorRefID" +
+                this.getMapInfo().getFloorRefId() + "\n");
+        sb.append("mapDimensionLenght" +
+                this.getMapInfo().getDimension().getLength().toString() + "\n");
+        sb.append("mapDimensionWidth" +
+                this.getMapInfo().getDimension().getWidth().toString() + "\n");
+        sb.append("mapDimensionHeight" +
+                this.getMapInfo().getDimension().getHeight().toString() + "\n");
+        sb.append("mapDimensionOffsetX" +
+                this.getMapInfo().getDimension().getOffsetX().toString() + "\n");
+        sb.append("mapDimensionOffsetY" +
+                this.getMapInfo().getDimension().getOffsetY().toString() + "\n");
+        sb.append("mapDimensionUnit" +
+                this.getMapInfo().getDimension().getUnit() + "\n"); // Change to meters if otherwise implemented?
+        sb.append("MapCoordinateX" +
+                this.getMapCoordinate().getX().toString() + "\n");
+        sb.append("MapCoordinateY" +
+                this.getMapCoordinate().getY().toString() + "\n");
+        sb.append("MapCoordinateUnit" +
+                this.getMapCoordinate().getUnit() + "\n");
+        sb.append("currentServerTime" +
+                this.getStatistics().getCurrentServerTime() + "\n");
+        sb.append("firstLocatedTime" +
+                this.getStatistics().getFirstLocatedTime() + "\n");
+        sb.append("lastLocatedTime" +
+                this.getStatistics().getLastLocatedTime() + "\n");
+
+        return sb.toString();
+    }
+
     /**
-     * 
+     *
      * @return
      *     The macAddress
      */
@@ -34,7 +84,7 @@ public class Entry {
     }
 
     /**
-     * 
+     *
      * @param macAddress
      *     The macAddress
      */
