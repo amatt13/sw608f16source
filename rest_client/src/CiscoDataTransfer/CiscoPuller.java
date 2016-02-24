@@ -25,9 +25,11 @@ public class CiscoPuller extends Thread {
                 break;
             }
 
-            // Convert to Json?
-        //    AllClient CiscoClient.ReadJsonToClientList(data);
-            // Convert to a more readable string?
+            // >>Convert to a Java Class?<<
+            //AllClient CiscoDataTransfer = CiscoClient.ReadJsonToClientList(data);
+            // >>Convert to a more readable string?<<
+            //data = CiscoDataTransfer.getLocations().getEntries().toString();
+
             SendToDB(data);
         }
     }
