@@ -55,4 +55,13 @@ public class CiscoPuller extends Thread {
             return false;
         }
     }
+    private Boolean SendToDB (AllClient data) {
+        try {
+            // some send function
+            return true;
+        } catch ( Exception e/*Some error*/) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 }
