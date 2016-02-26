@@ -4,9 +4,7 @@ import com.google.gson.GsonBuilder;
 import com.sun.net.httpserver.*;
 
 import java.io.*;
-import java.net.HttpURLConnection;
-import java.net.InetSocketAddress;
-import java.net.URL;
+import java.net.*;
 import java.nio.charset.Charset;
 import java.util.Base64;
 import java.util.LinkedList;
@@ -22,21 +20,59 @@ import diff_match_patchpack.diff_match_patch;
 
 public class RESTfulServer {
 
-    private static final String ciscoIp = "https://64.103.26.61";
-    private static final String myIp = "172.26.120.105";
+    private static String ciscoIp;
+    private static String myIp;
+    private static String username;
+    private static String password;
+
+    private static final int port = 8080;
+    private static final int SizeofConnectionQueue = 1;
+
+    // Gets the host address. Might cause trouble if several or no addresses returned.
+    static {
+        try {
+            myIp = InetAddress.getLocalHost().getHostAddress();
+        } catch (UnknownHostException e) {
+            System.out.println("Unknown Host Address");
+            e.printStackTrace();
+        }
+    }
 
     private static TreeSet<String> macAddressDB = new TreeSet<String>();
 
     public static void main(String[] args) throws IOException {
         new CertificateHandler();
-        HttpServer server = HttpServer.create(new InetSocketAddress(myIp, 8080), 1);
+        if (args.length != 3){
+            System.out.println("Invalid arguments. Please run the program with the arguments: Cisco-IP Username Password");
+            System.out.println("Example: 64.103.26.61 admin admin");
+            return;
+        }
+        ciscoIp = "https://" + args[0];
+        username = args[1];
+        password = args[2];
+        try {
+            httpGet(ciscoIp + "/api/contextaware/v1/location/clients/", username, password);
+        }
+        catch(IOException e){
+            System.out.println("Invalid url, username or password");
+            return;
+        }
+
+        HttpServer server = HttpServer.create(new InetSocketAddress(myIp, port), SizeofConnectionQueue);
+
+        // To add support for another CISCO MSE API call, add another context with the server.createContext() call.
+        // Supported CISCO MSE restful API can be found here: http://www.cisco.com/c/en/us/td/docs/wireless/mse/3350/7-5/MSE_REST_API/Guide/Cisco_MSE_REST_API_Guide/Location_API.html
+
+        // CreateContext adds a context to the restful service.
+        // In this case it will allow the path http://IP/api/contextaware/v1/location/clients
+        // The anonymous method is an overwrite of HttpHandler, an interface requiring implementation of a handle method.
         server.createContext("/api/contextaware/v1/location/clients", httpExchange -> {
             if (VerifyConnection(httpExchange) == false){
                 return;
             }
 
             /// HERE IS RESPONSE
-            String response = CollectAllClients("admin", "admin", ciscoIp);
+            String response = CollectAllClients(username, password, ciscoIp);
             System.out.println("Response:  " + response);
 
             httpExchange.sendResponseHeaders(200, response.length());
@@ -51,13 +87,16 @@ public class RESTfulServer {
             if (VerifyConnection(httpExchange) == false){
                 return;
             }
+            // Finds the difference between the URL entered and the one created with this context.
+            // If an url such as ip/api/contextaware/v1/location/clients/00:00:00:00:00:00 is entered, the diff
+            // will be the mac address. This is used to query Cisco MSE.
             diff_match_patch diff = new diff_match_patch();
             LinkedList<diff_match_patch.Diff> diffLinkedList = diff.diff_main(httpExchange.getRequestURI().getPath(),
                                                                               httpExchange.getHttpContext().getPath());
 
 
             /// HERE IS RESPONSE
-            String response = CollectSingleClient("admin", "admin",diffLinkedList.peekLast().text, ciscoIp);
+            String response = CollectSingleClient(username, password,diffLinkedList.peekLast().text, ciscoIp);
             System.out.println("Response: " + response);
 
             httpExchange.sendResponseHeaders(200, response.length());
@@ -66,6 +105,7 @@ public class RESTfulServer {
             os.close();
         });
 
+        // Adds a mac address to the watchlist. This address is not obfuscated untill it is removed from the watchlist.
         server.createContext("/api/watchlist/add/", httpExchange -> {
             if (VerifyConnection(httpExchange) == false){
                 return;
@@ -87,6 +127,7 @@ public class RESTfulServer {
             os.close();
         });
 
+        // Removes a mac address from the watchlist. After this it will be obfuscated.
         server.createContext("/api/watchlist/remove/", httpExchange -> {
             if (VerifyConnection(httpExchange) == false){
                 return;
@@ -101,6 +142,21 @@ public class RESTfulServer {
                               " from watchlist.\n Go to " + server.getAddress() +
                               "/api/watchlist/add/" + diffLinkedList.peekLast().text + " to add to watchlist.";
             RemoveMacAddressToWatchList(diffLinkedList.peekLast().text);
+            System.out.println("Response: " + response);
+            httpExchange.sendResponseHeaders(200, response.length());
+            OutputStream os = httpExchange.getResponseBody();
+            os.write(response.getBytes(Charset.forName("UTF-8")));
+            os.close();
+        });
+
+        // Simple test to see if server is online. Only used for debugging.
+        server.createContext("/online", httpExchange -> {
+            /*if (VerifyConnection(httpExchange) == false){
+                return;
+            }*/
+
+            System.out.println("Received request from " + httpExchange.getRemoteAddress().getAddress());
+            String response = "We are ONLINE!" ;
             System.out.println("Response: " + response);
             httpExchange.sendResponseHeaders(200, response.length());
             OutputStream os = httpExchange.getResponseBody();
@@ -155,6 +211,8 @@ public class RESTfulServer {
         return "Basic " + result;
     }
 
+    // Verifies a HTTP request by examining the basic auth header string and IP.
+    // If auth header isn't correct the connection is closed.
     private static boolean VerifyConnection(HttpExchange httpExchange) throws IOException {
         System.out.println("Received request from " + httpExchange.getRemoteAddress().getAddress());
 
@@ -169,13 +227,12 @@ public class RESTfulServer {
             os.close();
             return false;
         }
-        // TEST IP ADDRESS HERE!!!
+        // TODO test IP address!
         return true;
     }
 
-    //Here we have the choice to make a key-value object and store all mac-addresses with a unique value.
-    //Alternatively we can keep a list of mac-addresses that we are allowed to track.
-    //This code simply uses a SortedSet of addresses, it checks every entry and if we have to obfuscate we remove the first half.
+    //Keep a list of mac-addresses that we are allowed to track.
+    //This code simply uses a SortedSet of addresses, it checks every entry and if we have to obfuscate, we remove the first half.
     private static AllClient ObfuscateMacAddress(AllClient allList) {
         for (Entry item : allList.getLocations().getEntries()) {
             String oldMacAddress = item.getMacAddress();
@@ -194,6 +251,10 @@ public class RESTfulServer {
             singleClient.getWirelessClientLocation().setMacAddress(oldMacAddress.substring(0, oldMacAddress.length() / 2));
         }
         return singleClient;
+    }
+
+    private static void ObfuscateEmail(){
+        // TODO IMPLEMENT THIS!
     }
 
     public static void AddMacAddressToWatchList(String macaddress) {
