@@ -38,7 +38,7 @@ public class RESTfulServer {
         }
     }
 
-    private static TreeSet<String> macAddressDB = new TreeSet<String>();
+    private static TreeSet<String> watchList = new TreeSet<String>();
 
     public static void main(String[] args) throws IOException {
         new CertificateHandler();
@@ -78,8 +78,6 @@ public class RESTfulServer {
             httpExchange.sendResponseHeaders(200, response.length());
             OutputStream os = httpExchange.getResponseBody();
             os.write(response.getBytes(Charset.forName("UTF-8")));
-            PrintWriter printer = new PrintWriter(os, true);
-            printer.write(response);
             os.close();
         });
 
@@ -237,7 +235,7 @@ public class RESTfulServer {
         for (Entry item : allList.getLocations().getEntries()) {
             String oldMacAddress = item.getMacAddress();
 
-            if (macAddressDB.contains(oldMacAddress)) {
+            if (watchList.contains(oldMacAddress)) {
                 continue;
             }
             item.setMacAddress(oldMacAddress.substring(0, oldMacAddress.length() / 2));
@@ -247,7 +245,7 @@ public class RESTfulServer {
 
     private static Client ObfuscateMacAddress(Client singleClient) {
         String oldMacAddress = singleClient.getWirelessClientLocation().getMacAddress();
-        if (!macAddressDB.contains(oldMacAddress)) {
+        if (!watchList.contains(oldMacAddress)) {
             singleClient.getWirelessClientLocation().setMacAddress(oldMacAddress.substring(0, oldMacAddress.length() / 2));
         }
         return singleClient;
@@ -259,14 +257,14 @@ public class RESTfulServer {
 
     public static void AddMacAddressToWatchList(String macaddress) {
         //Here we need to verify that the input parameter is a valid address.
-        if (!macAddressDB.contains(macaddress))
-            macAddressDB.add(macaddress);
+        if (!watchList.contains(macaddress))
+            watchList.add(macaddress);
     }
 
     public static void RemoveMacAddressToWatchList(String macaddress) {
         //Here we need to verify that the input parameter is a valid address.
-        if(macAddressDB.contains(macaddress))
-            macAddressDB.remove(macaddress);
+        if(watchList.contains(macaddress))
+            watchList.remove(macaddress);
     }
 
     // Convert json string to a Java class.

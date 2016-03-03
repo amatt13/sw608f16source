@@ -1,4 +1,0 @@
-0      2016-02-21 16:11:38,809 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:451).start() - Starting proxy at address: /10.0.0.2:8080
-42     2016-02-21 16:11:38,851 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:480).doStart() - Proxy listening with TCP transport
-101    2016-02-21 16:11:38,910 INFO  [main] impl.DefaultHttpProxyServer (DefaultHttpProxyServer.java:515).doStart() - Proxy started at address: /10.0.0.2:8080
-3779   2016-02-21 16:11:42,588 INFO  [LittleProxy-0-ClientToProxyWorker-0] impl.ClientToProxyConnection (ProxyConnection.java:178).readHTTP() - (DISCONNECT_REQUESTED) [id: 0xa2b7acf5, /10.0.0.2:17294 :> 0.0.0.0/0.0.0.0:8080]: Ignoring message since the connection is closed or about to close
