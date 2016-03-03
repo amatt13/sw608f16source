@@ -34,12 +34,12 @@ public class CiscoPuller extends Thread {
         }
     }
 
-    private String GetCiscoData() {
+    public String GetCiscoData() {
         String data = "null";
         try {
             System.out.println(
                     data = httpGet("http://172.26.120.105:8080/api/contextaware/v1/location/clients",
-                    "test", "works2"));
+                    "test", "works"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -55,6 +55,7 @@ public class CiscoPuller extends Thread {
             return false;
         }
     }
+
     private Boolean SendToDB (AllClient data) {
         try {
             // some send function
