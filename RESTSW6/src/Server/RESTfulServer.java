@@ -21,12 +21,12 @@ import diff_match_patchpack.diff_match_patch;
 public class RESTfulServer {
 
     private static String ciscoIp;
-    private static String myIp;
+    protected static String myIp;
     private static String username;
     private static String password;
 
-    private static final int port = 8080;
-    private static final int SizeofConnectionQueue = 1;
+    protected static final int port = 8080;
+    protected static final int SizeofConnectionQueue = 1;
 
     // Gets the host address. Might cause trouble if several or no addresses returned.
     static {
@@ -67,7 +67,7 @@ public class RESTfulServer {
         // In this case it will allow the path http://IP/api/contextaware/v1/location/clients
         // The anonymous method is an overwrite of HttpHandler, an interface requiring implementation of a handle method.
         server.createContext("/api/contextaware/v1/location/clients", httpExchange -> {
-            if (VerifyConnection(httpExchange) == false){
+            if (!VerifyConnection(httpExchange)){
                 return;
             }
 
@@ -82,7 +82,7 @@ public class RESTfulServer {
         });
 
         server.createContext("/api/contextaware/v1/location/clients/", httpExchange -> {
-            if (VerifyConnection(httpExchange) == false){
+            if (!VerifyConnection(httpExchange)){
                 return;
             }
             // Finds the difference between the URL entered and the one created with this context.
@@ -105,7 +105,7 @@ public class RESTfulServer {
 
         // Adds a mac address to the watchlist. This address is not obfuscated untill it is removed from the watchlist.
         server.createContext("/api/watchlist/add/", httpExchange -> {
-            if (VerifyConnection(httpExchange) == false){
+            if (!VerifyConnection(httpExchange)){
                 return;
             }
             diff_match_patch diff = new diff_match_patch();
@@ -127,7 +127,7 @@ public class RESTfulServer {
 
         // Removes a mac address from the watchlist. After this it will be obfuscated.
         server.createContext("/api/watchlist/remove/", httpExchange -> {
-            if (VerifyConnection(httpExchange) == false){
+            if (!VerifyConnection(httpExchange)){
                 return;
             }
             diff_match_patch diff = new diff_match_patch();
@@ -149,7 +149,7 @@ public class RESTfulServer {
 
         // Simple test to see if server is online. Only used for debugging.
         server.createContext("/online", httpExchange -> {
-            /*if (VerifyConnection(httpExchange) == false){
+           /*  if (!VerifyConnection(httpExchange)){
                 return;
             }*/
 
@@ -173,7 +173,7 @@ public class RESTfulServer {
         System.out.println("Server stopped");
     }
 
-    private static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
+    protected static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
         URL url = new URL(urlStr);
         //String ip = getIP();
         HttpURLConnection conn =
@@ -202,7 +202,7 @@ public class RESTfulServer {
         return sb.toString();
     }
 
-    private static String Authentication(String name, String password) {
+    protected static String Authentication(String name, String password) {
         String temp = name + ":" + password;
         Base64.Encoder enc = Base64.getEncoder();
         String result = enc.encodeToString(temp.getBytes());
@@ -211,7 +211,7 @@ public class RESTfulServer {
 
     // Verifies a HTTP request by examining the basic auth header string and IP.
     // If auth header isn't correct the connection is closed.
-    private static boolean VerifyConnection(HttpExchange httpExchange) throws IOException {
+    protected static boolean VerifyConnection(HttpExchange httpExchange) throws IOException {
         System.out.println("Received request from " + httpExchange.getRemoteAddress().getAddress());
 
         Headers headers = httpExchange.getRequestHeaders();
@@ -231,7 +231,7 @@ public class RESTfulServer {
 
     //Keep a list of mac-addresses that we are allowed to track.
     //This code simply uses a SortedSet of addresses, it checks every entry and if we have to obfuscate, we remove the first half.
-    private static AllClient ObfuscateMacAddress(AllClient allList) {
+    protected static AllClient ObfuscateMacAddress(AllClient allList) {
         for (Entry item : allList.getLocations().getEntries()) {
             String oldMacAddress = item.getMacAddress();
 
@@ -243,7 +243,7 @@ public class RESTfulServer {
         return allList;
     }
 
-    private static Client ObfuscateMacAddress(Client singleClient) {
+    protected static Client ObfuscateMacAddress(Client singleClient) {
         String oldMacAddress = singleClient.getWirelessClientLocation().getMacAddress();
         if (!watchList.contains(oldMacAddress)) {
             singleClient.getWirelessClientLocation().setMacAddress(oldMacAddress.substring(0, oldMacAddress.length() / 2));
@@ -251,7 +251,7 @@ public class RESTfulServer {
         return singleClient;
     }
 
-    private static void ObfuscateEmail(){
+    protected static void ObfuscateEmail(){
         // TODO IMPLEMENT THIS!
     }
 
@@ -268,21 +268,20 @@ public class RESTfulServer {
     }
 
     // Convert json string to a Java class.
-    private static Client ReadJsonToClient(String json){
+    protected static Client ReadJsonToClient(String json){
         Gson gson = new GsonBuilder().create();
-        Client client = gson.fromJson(json, Client.class);
-        return client;
+        return gson.fromJson(json, Client.class);
     }
 
     // Convert json string to a Java class.
-    private static AllClient ReadJsonToClientList(String json){
+    protected static AllClient ReadJsonToClientList(String json){
         Gson gson = new GsonBuilder().create();
         AllClient clientlist = gson.fromJson(json, AllClient.class);
         return clientlist;
     }
 
 
-    private static <T> String ConvertToJson(T classOfT){
+    protected static <T> String ConvertToJson(T classOfT){
         Gson gson = new GsonBuilder().create();
         String result = gson.toJson(classOfT);
         return result;
@@ -299,12 +298,11 @@ public class RESTfulServer {
 
     // Method to cconnect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
     public static String CollectAllClients(String username, String password, String ip) throws IOException {
-        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/", username, password);
+        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/",
+                username, password);
         AllClient allClient = ReadJsonToClientList(requestresult);
         allClient = ObfuscateMacAddress(allClient);
-        String result = ConvertToJson(allClient);
-        return result;
+        return ConvertToJson(allClient);
     }
-
 
 }

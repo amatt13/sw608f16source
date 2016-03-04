@@ -5,10 +5,11 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
 
+
 @Generated("org.jsonschema2pojo")
 public class AllClient {
 
-    private Locations Locations;
+    public Locations Locations;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**

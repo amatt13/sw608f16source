@@ -38,7 +38,7 @@ public class CiscoPuller extends Thread {
         String data = "null";
         try {
             System.out.println(
-                    data = httpGet("http://172.26.120.105:8080/api/contextaware/v1/location/clients",
+                    data = httpGet("http://172.26.120.61:8080/api/contextaware/v1/location/clients",
                     "test", "works"));
         } catch (IOException e) {
             e.printStackTrace();

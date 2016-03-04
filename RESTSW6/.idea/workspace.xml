@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d36aa737-1bf7-4808-b1aa-1ab0f5b48211" name="Default" comment="" />
+    <list default="true" id="d36aa737-1bf7-4808-b1aa-1ab0f5b48211" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Junit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/RESTfulServerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/AllClient.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/AllClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Entry.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Entry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Locations.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Locations.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServer.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/diff_match_patchpack/diff_match_patch$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/diff_match_patchpack/diff_match_patch$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/diff_match_patchpack/diff_match_patch.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/diff_match_patchpack/diff_match_patch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoClientTest.class" afterPath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoClientTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoPuller.class" afterPath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoPuller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoPullerTest.class" afterPath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoPullerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTSW6.iml" afterPath="$PROJECT_DIR$/RESTSW6.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/AllClient.java" afterPath="$PROJECT_DIR$/src/AllClient/AllClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/Entry.java" afterPath="$PROJECT_DIR$/src/AllClient/Entry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/Locations.java" afterPath="$PROJECT_DIR$/src/AllClient/Locations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/RESTfulServer.java" afterPath="$PROJECT_DIR$/src/Server/RESTfulServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../rest_client/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/rest_client.iml" afterPath="$PROJECT_DIR$/../rest_client/rest_client.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPuller.java" afterPath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPuller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPullerTest.groovy" afterPath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPullerTest.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/src/SingleClient/Client.java" afterPath="$PROJECT_DIR$/../rest_client/src/SingleClient/Client.java" />
+    </list>
     <ignored path="RESTSW6.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,16 +41,46 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExportTestResults" outputFolder="$USER_HOME$/Desktop" userTempatePath="" />
   <component name="FavoritesManager">
-    <favorites_list name="RESTSW6" />
+    <favorites_list name="RESTSW6">
+      <favorite_root url="file://$PROJECT_DIR$/src/Server/RESTfulServer.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RESTfulServer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RESTfulServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30752212">
-              <caret line="276" column="43" selection-start-line="276" selection-start-column="43" selection-end-line="276" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="237" column="42" selection-start-line="237" selection-start-column="42" selection-end-line="237" selection-end-column="42" />
+              <folding>
+                <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="e#1892#1999#0" expanded="false" />
+                <element signature="e#3236#3322#0" expanded="false" />
+                <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RESTfulServerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,47 +88,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpServer.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
+      <file leaf-file-name="FrameworkMethod.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.23402163">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+              <folding>
+                <element signature="e#982#1175#0" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunAfters.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.444445">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpHandler.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
+      <file leaf-file-name="ParentRunner.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state vertical-scroll-proportion="-12.555555">
+              <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+              <folding>
+                <element signature="e#2137#2138#0" expanded="true" />
+                <element signature="e#2181#2182#0" expanded="true" />
+                <element signature="e#6429#6593#0" expanded="true" />
+                <element signature="e#6592#6593#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockJUnit4ClassRunner.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.185185">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Headers.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
+      <file leaf-file-name="ReflectiveCallable.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diff_match_patch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+            <state vertical-scroll-proportion="-7.5555553">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -88,7 +169,12 @@
         <option value="$PROJECT_DIR$/src/example/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/example/RESTfulServe.java" />
         <option value="$PROJECT_DIR$/src/example/RESTfulServer.java" />
+        <option value="$PROJECT_DIR$/src/SingleClient/Client.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/Locations.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/Entry.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/AllClient.java" />
         <option value="$PROJECT_DIR$/src/Server/RESTfulServer.java" />
+        <option value="$PROJECT_DIR$/src/Server/RESTfulServerTest.java" />
       </list>
     </option>
   </component>
@@ -98,12 +184,12 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-1058" />
+    <option name="y" value="-910" />
+    <option name="width" value="1066" />
+    <option name="height" value="1656" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -114,7 +200,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -127,7 +213,63 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSW6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSW6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSW6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSW6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSW6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SingleClient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSW6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RESTSW6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -137,7 +279,16 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testingPrograms" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/plugins/testng/lib/testng.jar!/" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Server" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -165,7 +316,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RESTfulServer">
+  <component name="RunManager" selected="JUnit.RESTfulServerTest">
+    <configuration default="false" name="RESTfulServerTest.testAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RESTSW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Server" />
+      <option name="MAIN_CLASS_NAME" value="Server.RESTfulServerTest" />
+      <option name="METHOD_NAME" value="testAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="RESTfulServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -184,6 +361,84 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="RESTSW6" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RESTfulServerTest.testVerifyConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RESTSW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Server" />
+      <option name="MAIN_CLASS_NAME" value="Server.RESTfulServerTest" />
+      <option name="METHOD_NAME" value="testVerifyConnection" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RESTfulServerTest.testObfuscateMacAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RESTSW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Server" />
+      <option name="MAIN_CLASS_NAME" value="Server.RESTfulServerTest" />
+      <option name="METHOD_NAME" value="testObfuscateMacAddress" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RESTfulServerTest.testObfuscateMacAddress1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RESTSW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Server" />
+      <option name="MAIN_CLASS_NAME" value="Server.RESTfulServerTest" />
+      <option name="METHOD_NAME" value="testObfuscateMacAddress1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -608,12 +863,47 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.RESTfulServer" />
+    <configuration default="false" name="RESTfulServerTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="RESTSW6" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Server" />
+      <option name="MAIN_CLASS_NAME" value="Server.RESTfulServerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest.testAuthentication" />
+      <item index="2" class="java.lang.String" itemvalue="Application.RESTfulServer" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest.testVerifyConnection" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest.testObfuscateMacAddress" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest.testObfuscateMacAddress1" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.RESTfulServer" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest.testObfuscateMacAddress" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest.testObfuscateMacAddress1" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest.testVerifyConnection" />
+        <item index="3" class="java.lang.String" itemvalue="Application.RESTfulServer" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RESTfulServerTest.testAuthentication" />
       </list>
     </recent_temporary>
   </component>
@@ -636,34 +926,68 @@
       <workItem from="1456911492834" duration="1397000" />
       <workItem from="1457006448552" duration="1992000" />
       <workItem from="1457008499769" duration="72000" />
+      <workItem from="1457080168478" duration="3875000" />
+      <workItem from="1457085145930" duration="14221000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="RESTfulServerTest - 2016.03.04 at 15h 44m 38s.xml">
+      <configuration name="RESTfulServerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest - 2016.03.04 at 15h 45m 15s.xml">
+      <configuration name="RESTfulServerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest - 2016.03.04 at 15h 46m 48s.xml">
+      <configuration name="RESTfulServerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest - 2016.03.04 at 15h 47m 41s.xml">
+      <configuration name="RESTfulServerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest - 2016.03.04 at 15h 49m 25s.xml">
+      <configuration name="RESTfulServerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest - 2016.03.04 at 15h 50m 50s.xml">
+      <configuration name="RESTfulServerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest - 2016.03.04 at 15h 51m 15s.xml">
+      <configuration name="RESTfulServerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest - 2016.03.04 at 15h 51m 39s.xml">
+      <configuration name="RESTfulServerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest_testObfuscateMacAddress - 2016.03.04 at 15h 44m 57s.xml">
+      <configuration name="RESTfulServerTest.testObfuscateMacAddress" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest_testObfuscateMacAddress - 2016.03.04 at 15h 45m 01s.xml">
+      <configuration name="RESTfulServerTest.testObfuscateMacAddress" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33860000" />
+    <option name="totallyTimeSpent" value="51956000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1058" y="-910" width="1066" height="1656" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2429022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52527905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24950299" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24950299" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39909443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29612607" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -672,6 +996,33 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24950299" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3985555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32698622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24950299" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -686,7 +1037,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -695,208 +1057,15 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+    <entry file="file://$PROJECT_DIR$/src/CertificateHandler/CertificateHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/HelloWorldClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -909,15 +1078,8 @@
     <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <caret line="2325" column="23" selection-start-line="2325" selection-start-column="23" selection-end-line="2325" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/HelloWorldClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -926,7 +1088,187 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -951,7 +1293,22 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -964,18 +1321,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpExchange.class">
+    <entry file="file://$PROJECT_DIR$/src/Server/HelloWorldClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12130479">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/HelloWorldClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -986,28 +1400,263 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="1777" column="0" selection-start-line="1777" selection-start-column="0" selection-end-line="1777" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.115803815">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.011363637">
+          <caret line="2325" column="23" selection-start-line="2325" selection-start-column="23" selection-end-line="2325" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CertificateHandler/CertificateHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/MultipleFailureException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.25926">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/Throwables.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.814815">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/EachTestNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.962963">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/notification/RunNotifier.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.148149">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="e#4617#4618#0" expanded="true" />
+            <element signature="e#4681#4682#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/notification/SynchronizedRunListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.592592">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/notification/Failure.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.962963">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/Description.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3437863">
+          <caret line="115" column="15" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+          <folding>
+            <element signature="e#4290#4291#0" expanded="true" />
+            <element signature="e#4338#4339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runner/Result.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7154471">
+          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/jre/lib/rt.jar!/com/sun/net/httpserver/HttpExchange.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4751553">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingleClient/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#521#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.6.1.jar!/com/google/gson/internal/Primitives.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13396375">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.6.1.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3672183">
+          <caret line="467" column="23" selection-start-line="467" selection-start-column="23" selection-end-line="467" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllClient/AllClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#264#280#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllClient/Locations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#1501#1502#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllClient/Entry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5516224">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30752212">
-          <caret line="276" column="43" selection-start-line="276" selection-start-column="43" selection-end-line="276" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="237" column="42" selection-start-line="237" selection-start-column="42" selection-end-line="237" selection-end-column="42" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#main#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="e#1892#1999#0" expanded="false" />
+            <element signature="e#3236#3322#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5555553">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/RunAfters.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.444445">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.185185">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.555555">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+          <folding>
+            <element signature="e#2137#2138#0" expanded="true" />
+            <element signature="e#2181#2182#0" expanded="true" />
+            <element signature="e#6429#6593#0" expanded="true" />
+            <element signature="e#6592#6593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23402163">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+          <folding>
+            <element signature="e#982#1175#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1088,7 +1737,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>gson-2.6.1</last-edited>
+          <last-edited>Junit</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

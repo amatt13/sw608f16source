@@ -4,9 +4,6 @@ import AllClient.AllClient
 import org.junit.AfterClass
 import org.junit.Test
 import org.junit.BeforeClass
-import org.junit.Assert
-import org.junit.Assert
-import org.testng.annotations.BeforeTest
 
 import static org.junit.Assert.assertEquals
 
@@ -29,13 +26,13 @@ class CiscoPullerTest {
     @Test
     // This method have not been tested yet. OBS it is a void method
     void testRun() {
-
+        //assertEquals("Testing 'function', cond1, cond2)
     }
 
     @Test
     //
     void testGetCiscoData() {
-        //
+        //assertEquals("Testing 'function', cond1, cond2)
     }
 
     @Test
