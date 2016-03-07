@@ -274,10 +274,15 @@ public class RESTfulServer {
     }
 
     // Convert json string to a Java class.
+    protected static WirelessClientLocation ReadJsonToWirelessClientLocation(String json){
+        Gson gson = new GsonBuilder().create();
+        return gson.fromJson(json, WirelessClientLocation.class);
+    }
+
+    // Convert json string to a Java class.
     protected static AllClient ReadJsonToClientList(String json){
         Gson gson = new GsonBuilder().create();
-        AllClient clientlist = gson.fromJson(json, AllClient.class);
-        return clientlist;
+        return gson.fromJson(json, AllClient.class);
     }
 
 
@@ -287,17 +292,16 @@ public class RESTfulServer {
         return result;
     }
 
-    // Method to cconnect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
+    // Method to connect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
     public static String CollectSingleClient(String username, String password, String userID, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/" + userID, username, password);
         Client client = ReadJsonToClient(requestresult);
         client = ObfuscateMacAddress(client);
-        String result = ConvertToJson(client);
-        return result;
+        return ConvertToJson(client);
     }
 
-    // Method to cconnect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
-    public static String CollectAllClients(String username, String password, String ip) throws IOException {
+    // Method to connect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
+    public static String    CollectAllClients(String username, String password, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/",
                 username, password);
         AllClient allClient = ReadJsonToClientList(requestresult);

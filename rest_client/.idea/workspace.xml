@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f230f36f-39b0-4718-9d91-aa1795a99494" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RESTSW6/.idea/libraries/Junit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/AllClient/AllClient.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/AllClient/AllClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/AllClient/Entry.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/AllClient/Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/AllClient/Locations.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/AllClient/Locations.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServer.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/diff_match_patchpack/diff_match_patch$1.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/diff_match_patchpack/diff_match_patch$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/diff_match_patchpack/diff_match_patch.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/diff_match_patchpack/diff_match_patch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rest_client/CiscoDataTransfer/CiscoClientTest.class" afterPath="$PROJECT_DIR$/out/production/rest_client/CiscoDataTransfer/CiscoClientTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rest_client/CiscoDataTransfer/CiscoPuller.class" afterPath="$PROJECT_DIR$/out/production/rest_client/CiscoDataTransfer/CiscoPuller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/rest_client/CiscoDataTransfer/CiscoPullerTest.class" afterPath="$PROJECT_DIR$/out/production/rest_client/CiscoDataTransfer/CiscoPullerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServerTest$1.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServerTest$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServerTest.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServerTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/SingleClient/Client.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/SingleClient/Client.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../RESTSW6/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/RESTSW6.iml" afterPath="$PROJECT_DIR$/../RESTSW6/RESTSW6.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/src/AllClient/AllClient.java" afterPath="$PROJECT_DIR$/../RESTSW6/src/AllClient/AllClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/src/AllClient/Entry.java" afterPath="$PROJECT_DIR$/../RESTSW6/src/AllClient/Entry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/src/AllClient/Locations.java" afterPath="$PROJECT_DIR$/../RESTSW6/src/AllClient/Locations.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServer.java" afterPath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServerTest.java" afterPath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest_client.iml" afterPath="$PROJECT_DIR$/rest_client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java" afterPath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy" afterPath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SingleClient/Client.java" afterPath="$PROJECT_DIR$/src/SingleClient/Client.java" />
     </list>
     <ignored path="rest_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,10 +40,10 @@
       <file leaf-file-name="CiscoClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5804878">
-              <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.20468228">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+                <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
                 <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
                 <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
                 <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -82,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
               <folding>
                 <element signature="docComment;class#CiscoPuller#0" expanded="false" />
               </folding>
@@ -913,6 +899,7 @@
       <workItem from="1457079466238" duration="4442000" />
       <workItem from="1457085097426" duration="43000" />
       <workItem from="1457087473798" duration="3923000" />
+      <workItem from="1457342521070" duration="2978000" />
     </task>
     <servers />
   </component>
@@ -949,7 +936,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40220000" />
+    <option name="totallyTimeSpent" value="43198000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -962,7 +949,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1058" y="-910" width="1066" height="1656" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1017,9 +1004,53 @@
     <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="e#27#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          <folding>
+            <element signature="e#27#53#0" expanded="true" />
+            <element signature="e#179#220#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -1063,7 +1094,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -1107,7 +1138,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -1151,7 +1182,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -1174,7 +1205,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -1197,7 +1228,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -1220,7 +1251,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -1264,7 +1295,7 @@
         <state vertical-scroll-proportion="0.067353405">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
@@ -1354,8 +1385,8 @@
         <state vertical-scroll-proportion="0.19652407">
           <caret line="2872" column="18" selection-start-line="2872" selection-start-column="18" selection-end-line="2872" selection-end-column="26" />
           <folding>
-            <element signature="e#112984#112985#0" expanded="true" />
-            <element signature="e#113011#113012#0" expanded="true" />
+            <element signature="e#112984#112985#0" expanded="false" />
+            <element signature="e#113011#113012#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1364,18 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#264#280#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1383,22 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26153848">
           <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;method#getWirelessClientLocation#0;class#Client#0" expanded="false" />
-            <element signature="docComment;method#setWirelessClientLocation#0;class#Client#0" expanded="false" />
-            <element signature="method#setWirelessClientLocation#0;class#Client#0" expanded="false" />
-            <element signature="method#toString#0;class#Client#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1423,12 +1426,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding>
+            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5804878">
-          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.20468228">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
