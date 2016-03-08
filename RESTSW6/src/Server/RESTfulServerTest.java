@@ -1,6 +1,7 @@
 package Server;
 
 import AllClient.AllClient;
+import CertificateHandler.CertificateHandler;
 import SingleClient.Client;
 import AllClient.Entry;
 import AllClient.Locations;
@@ -91,7 +92,14 @@ public class RESTfulServerTest {
 
     @Test
     public void testMain() throws Exception {
-        //assertEquals("Testing 'function', cond1, cond2)
+        String[] args = new String[]{
+        localIP,"test","works",};
+        RESTfulServer.main(args);
+        /*
+        ciscoIp = "https://" + args[0];
+        username = args[1];
+        password = args[2];
+         */
     }
 
     @Test
@@ -105,7 +113,7 @@ public class RESTfulServerTest {
                 RESTfulServer.Authentication("test", "works"));
     }
 
-    @Test
+    @Test // This test does not work as the lambda is trivially true
     public void testVerifyConnection() throws Exception {
         localServer.createContext("/api/contextaware/v1/location/clients", httpExchange -> {
             String response = RESTfulServer.CollectAllClients("", "", "https://");
@@ -113,7 +121,6 @@ public class RESTfulServerTest {
             OutputStream os = httpExchange.getResponseBody();
             os.write(response.getBytes(Charset.forName("UTF-8")));
             os.close();
-
             assertEquals("Testing 'VerifyConnection'", true,
                     RESTfulServer.VerifyConnection(httpExchange));
             });
@@ -136,6 +143,7 @@ public class RESTfulServerTest {
     @Test
     public void testObfuscateEmail() throws Exception {
         //assertEquals("Testing 'ObfuscateMacAddress'", "anonymous OR null", RESTfulServer.ObfuscateEmail());
+        // The actual method has not been implemented yet
     }
 
     @Test
@@ -165,7 +173,10 @@ public class RESTfulServerTest {
 
     @Test
     public void testReadJsonToClient() throws Exception {
+        Client premadeCLient1 = RESTfulServer.ReadJsonToClient(clientDesc);
+        Client premadeClient2 = RESTfulServer.ReadJsonToClient(allClientDesc);
 
+        assertEquals("This test will always fail. Contact Anders", premadeCLient1, premadeClient2);
     }
 
     @Test
@@ -187,11 +198,22 @@ public class RESTfulServerTest {
 
     @Test
     public void testCollectSingleClient() throws Exception {
-        //
+        localServer.createContext("/api/contextaware/v1/location/clients/12.34.56.789", httpExchange -> {
+            httpExchange.sendResponseHeaders(200, allClientDesc.length());
+            OutputStream os = httpExchange.getResponseBody();
+            os.write(allClientDesc.getBytes(Charset.forName("UTF-8")));
+            os.close();
+        });
+        localServer.start();
+        System.out.println("Local server started at:");
+        System.out.println(localServer.getAddress());
+
+        RESTfulServer.CollectSingleClient("test", "works", "12.34.56.789","http://" + localIP);
     }
 
     @Test
     public void testCollectAllClients() throws Exception {
+        new CertificateHandler();
         localServer.createContext("/api/contextaware/v1/location/clients", httpExchange -> {
             httpExchange.sendResponseHeaders(200, allClientDesc.length());
             OutputStream os = httpExchange.getResponseBody();
@@ -202,6 +224,11 @@ public class RESTfulServerTest {
         System.out.println("Local server started at:");
         System.out.println(localServer.getAddress());
 
-        RESTfulServer.CollectAllClients("test", "works", "http://" + localIP);
+       // RESTfulServer.CollectAllClients("test", "works", "http://" + localIP);
+
+        System.in.read();
+        System.out.println("Stopping server");
+        localServer.stop(0);
+        System.out.println("Server stopped");
     }
 }

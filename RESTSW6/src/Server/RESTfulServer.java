@@ -288,8 +288,7 @@ public class RESTfulServer {
 
     protected static <T> String ConvertToJson(T classOfT){
         Gson gson = new GsonBuilder().create();
-        String result = gson.toJson(classOfT);
-        return result;
+        return gson.toJson(classOfT);
     }
 
     // Method to connect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
