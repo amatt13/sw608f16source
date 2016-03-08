@@ -18,19 +18,19 @@ public class CiscoPuller extends Thread {
             time = System.currentTimeMillis();
             String data = GetCiscoData();
             System.out.println("Pulled Data at " + System.currentTimeMillis());
-            try {
-                sleep(time + 300000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-                break;
-            }
-
             // >>Convert to a Java Class?<<
             //AllClient CiscoDataTransfer = CiscoClient.ReadJsonToClientList(data);
             // >>Convert to a more readable string?<<
             //data = CiscoDataTransfer.getLocations().getEntries().toString();
 
             SendToDB(data);
+
+            try {
+                sleep(time + 300000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+                break;
+            }
         }
     }
 

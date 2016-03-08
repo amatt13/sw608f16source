@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f230f36f-39b0-4718-9d91-aa1795a99494" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServer.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServerTest$1.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServerTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServerTest.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/Server/RESTfulServerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/SingleClient/Client.class" afterPath="$PROJECT_DIR$/../RESTSW6/out/production/RESTSW6/SingleClient/Client.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../RESTSW6/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServer.java" afterPath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServerTest.java" afterPath="$PROJECT_DIR$/../RESTSW6/src/Server/RESTfulServerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java" afterPath="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java" />
     </list>
     <ignored path="rest_client.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,53 +36,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CiscoClient.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CiscoClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20468228">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
-                <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#CiscoClient#0" expanded="false" />
+                <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
                 <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
                 <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
                 <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+                <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CiscoClientTest.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy">
+      <file leaf-file-name="CiscoClientTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-              <folding>
-                <element signature="e#27#54#0" expanded="true" />
-              </folding>
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CiscoPuller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CiscoPuller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.29142857">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <element signature="docComment;class#CiscoPuller#0" expanded="false" />
+                <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+                <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CiscoPullerTest.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy">
+      <file leaf-file-name="CiscoPullerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
               <folding>
-                <element signature="e#27#53#0" expanded="true" />
-                <element signature="e#179#220#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,6 +95,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -115,11 +116,13 @@
         <option value="$PROJECT_DIR$/src/AllClient/Entry.java" />
         <option value="$PROJECT_DIR$/src/example/AutoPull.java" />
         <option value="$PROJECT_DIR$/src/CiscoDataTransfer/AutoPull.java" />
-        <option value="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy" />
         <option value="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java" />
         <option value="$PROJECT_DIR$/src/SingleClient/Client.java" />
-        <option value="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java" />
         <option value="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy" />
+        <option value="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java" />
+        <option value="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy" />
+        <option value="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.java" />
+        <option value="$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.java" />
       </list>
     </option>
   </component>
@@ -159,8 +162,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -261,13 +264,14 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="CiscoDataTransfer" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
     </key>
   </component>
@@ -900,6 +904,8 @@
       <workItem from="1457085097426" duration="43000" />
       <workItem from="1457087473798" duration="3923000" />
       <workItem from="1457342521070" duration="2978000" />
+      <workItem from="1457424694017" duration="31000" />
+      <workItem from="1457430332023" duration="2400000" />
     </task>
     <servers />
   </component>
@@ -936,7 +942,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43198000" />
+    <option name="totallyTimeSpent" value="45629000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -949,7 +955,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1058" y="-910" width="1066" height="1656" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -959,7 +965,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14642154" sideWeight="0.50397617" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4432042" sideWeight="0.49602386" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17728168" sideWeight="0.49602386" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15101773" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.250497" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -1006,20 +1012,40 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy">
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
           <folding>
-            <element signature="e#27#54#0" expanded="true" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1029,18 +1055,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-          <folding>
-            <element signature="e#27#53#0" expanded="true" />
-            <element signature="e#179#220#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1050,20 +1066,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="56" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="56" />
-          <folding>
-            <element signature="e#27#54#0" expanded="true" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1073,18 +1082,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding>
-            <element signature="e#27#53#0" expanded="true" />
-            <element signature="e#179#220#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1094,20 +1093,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="56" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="56" />
-          <folding>
-            <element signature="e#27#54#0" expanded="true" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1117,18 +1109,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding>
-            <element signature="e#27#53#0" expanded="true" />
-            <element signature="e#179#220#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1138,20 +1120,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#27#54#0" expanded="true" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1161,18 +1136,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="e#27#53#0" expanded="true" />
-            <element signature="e#179#220#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1182,10 +1147,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1195,7 +1163,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1205,10 +1174,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1218,7 +1190,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="55" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1228,10 +1201,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1241,7 +1217,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1251,10 +1228,13 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1285,7 +1265,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1295,10 +1276,13 @@
         <state vertical-scroll-proportion="0.067353405">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
           <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
             <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1384,10 +1368,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19652407">
           <caret line="2872" column="18" selection-start-line="2872" selection-start-column="18" selection-end-line="2872" selection-end-column="26" />
-          <folding>
-            <element signature="e#112984#112985#0" expanded="false" />
-            <element signature="e#113011#113012#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1405,46 +1385,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.groovy">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/jre/lib/rt.jar!/sun/net/www/http/HttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82913667">
+          <caret line="381" column="0" selection-start-line="381" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding>
-            <element signature="e#27#53#0" expanded="true" />
-            <element signature="e#179#220#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#CiscoClient#0" expanded="false" />
+            <element signature="method#httpGet#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#ConvertToJson#0;class#CiscoClient#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.groovy">
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClientTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPullerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
           <folding>
-            <element signature="e#27#54#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoPuller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.29142857">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#CiscoPuller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CiscoDataTransfer/CiscoClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20468228">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="method#main#0;class#CiscoClient#0" expanded="false" />
-            <element signature="method#Authentication#0;class#CiscoClient#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#CiscoClient#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#CiscoClient#0" expanded="false" />
+            <element signature="method#SendToDB#0;class#CiscoPuller#0" expanded="false" />
+            <element signature="method#SendToDB#1;class#CiscoPuller#0" expanded="false" />
           </folding>
         </state>
       </provider>
