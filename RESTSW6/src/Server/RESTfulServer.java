@@ -10,6 +10,8 @@ import java.util.Base64;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import CertificateHandler.*;
 import AllClient.*;
@@ -38,7 +40,7 @@ public class RESTfulServer {
         }
     }
 
-    private static TreeSet<String> watchList = new TreeSet<String>();
+    protected static TreeSet<String> watchList = new TreeSet<String>();
 
     public static void main(String[] args) throws IOException {
         new CertificateHandler();
@@ -256,8 +258,10 @@ public class RESTfulServer {
     }
 
     public static void AddMacAddressToWatchList(String macaddress) {
-        //Here we need to verify that the input parameter is a valid address.
-        if (!watchList.contains(macaddress))
+        Pattern macVerifier = Pattern.compile("[0-9a-f]{2}([-:])[0-9a-f]{2}(\\1[0-9a-f]{2}){4}$");
+        Matcher matcher = macVerifier.matcher(macaddress);
+        Boolean match = matcher.matches();
+        if (match && !watchList.contains(macaddress))
             watchList.add(macaddress);
     }
 
@@ -265,6 +269,9 @@ public class RESTfulServer {
         //Here we need to verify that the input parameter is a valid address.
         if(watchList.contains(macaddress))
             watchList.remove(macaddress);
+        else {
+            System.out.println("Mac-address '" + macaddress + "' is invalid");
+        }
     }
 
     // Convert json string to a Java class.
