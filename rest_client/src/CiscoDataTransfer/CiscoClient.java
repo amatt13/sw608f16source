@@ -19,6 +19,7 @@ public class CiscoClient {
 
       // This thread pulls data from Cisco and stores it on the Database
       ciscoPuller.start();
+      System.out.println("ciscoPuller started");
   }
 
     // Pull data from VPN server
