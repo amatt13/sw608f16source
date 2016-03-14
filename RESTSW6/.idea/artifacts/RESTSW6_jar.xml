@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RESTSW6:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RESTSW6_jar</output-path>
+    <root id="archive" name="RESTSW6.jar">
+      <element id="module-output" name="RESTSW6" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jersey-container-servlet.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/javax.ws.rs-api-2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jersey-common.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jersey-client.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jersey-container-servlet-core.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jersey-server.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
