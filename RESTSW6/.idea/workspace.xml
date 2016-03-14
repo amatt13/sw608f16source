@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="RESTSW6:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d36aa737-1bf7-4808-b1aa-1ab0f5b48211" name="Default" comment="" />
     <ignored path="RESTSW6.iws" />
@@ -26,8 +31,8 @@
       <file leaf-file-name="RESTfulServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30752212">
-              <caret line="276" column="43" selection-start-line="276" selection-start-column="43" selection-end-line="276" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.41584158">
+              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,7 +75,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-              <folding />
+              <folding>
+                <element signature="e#0#89015#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3907#3908#0" expanded="false" />
+                <element signature="e#3953#3954#0" expanded="false" />
+                <element signature="e#86375#86376#0" expanded="false" />
+                <element signature="e#86424#86425#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,10 +146,15 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testingPrograms" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="restsw6" />
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -636,25 +653,31 @@
       <workItem from="1456911492834" duration="1397000" />
       <workItem from="1457006448552" duration="1992000" />
       <workItem from="1457008499769" duration="72000" />
+      <workItem from="1457008684610" duration="39000" />
+      <workItem from="1457012155155" duration="1043000" />
+      <workItem from="1457516634872" duration="972000" />
+      <workItem from="1457699395219" duration="768000" />
+      <workItem from="1457700174197" duration="915000" />
+      <workItem from="1457701098359" duration="1065000" />
+      <workItem from="1457703555050" duration="126000" />
+      <workItem from="1457704289370" duration="1360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33860000" />
+    <option name="totallyTimeSpent" value="40148000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2429022" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2495238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -663,13 +686,15 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39909443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24126779" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3785489" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -686,7 +711,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="23" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Server/RESTfulServer.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="27" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -695,24 +728,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -733,49 +748,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +797,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -859,7 +846,210 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/Headers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -885,7 +1075,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -910,7 +1107,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -935,7 +1139,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -960,7 +1171,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2313" column="52" selection-start-line="2313" selection-start-column="52" selection-end-line="2313" selection-end-column="52" />
-          <folding />
+          <folding>
+            <element signature="e#0#89015#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3907#3908#0" expanded="false" />
+            <element signature="e#3953#3954#0" expanded="false" />
+            <element signature="e#86375#86376#0" expanded="false" />
+            <element signature="e#86424#86425#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,8 +1222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30752212">
-          <caret line="276" column="43" selection-start-line="276" selection-start-column="43" selection-end-line="276" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.41584158">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1017,11 +1235,20 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="library" />
+              <type id="javaee-facet-resources" />
+              <type id="jpa-descriptors" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>RESTSW6:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
