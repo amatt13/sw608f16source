@@ -43,7 +43,7 @@ public class Client {
 
         for(String s : this.WirelessClientLocation.getIpAddress()) ipHelper.append(s);
 
-        sb.append("Jeg er så glad i dag \n");
+        sb.append("New entry... \n");
         sb.append("apMacAdress" +
                 this.WirelessClientLocation.getApMacAddress() + "\n");
         sb.append("macAddress" +

@@ -10,7 +10,7 @@ import javax.annotation.Generated;
 @Generated("org.jsonschema2pojo")
 public class Entry {
 
-    private String macAddress;
+    protected String macAddress;
     private Boolean currentlyTracked;
     private Double confidenceFactor;
     private List<String> ipAddress = new ArrayList<String>();

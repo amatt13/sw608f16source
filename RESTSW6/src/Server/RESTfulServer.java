@@ -10,6 +10,8 @@ import java.util.Base64;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeSet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import CertificateHandler.*;
 import AllClient.*;
@@ -20,13 +22,13 @@ import diff_match_patchpack.diff_match_patch;
 
 public class RESTfulServer {
 
-    private static String ciscoIp;
-    private static String myIp;
-    private static String username;
-    private static String password;
+    private static String ciscoIp; /**< This is the ip we get the data from*/
+    protected static String myIp; /**< The user ip aka my ip*/
+    private static String username; /**< username */
+    private static String password; /**<password */
 
-    private static final int port = 8080;
-    private static final int SizeofConnectionQueue = 1;
+    protected static final int port = 8080;
+    protected static final int SizeofConnectionQueue = 1;
 
     // Gets the host address. Might cause trouble if several or no addresses returned.
     static {
@@ -38,7 +40,7 @@ public class RESTfulServer {
         }
     }
 
-    private static TreeSet<String> watchList = new TreeSet<String>();
+    protected static TreeSet<String> watchList = new TreeSet<String>();
 
     public static void main(String[] args) throws IOException {
         new CertificateHandler();
@@ -47,11 +49,11 @@ public class RESTfulServer {
             System.out.println("Example: 64.103.26.61 admin admin");
             return;
         }
-        ciscoIp = "https://" + args[0];
+        ciscoIp = "http://" + args[0];
         username = args[1];
         password = args[2];
         try {
-            httpGet(ciscoIp + "/api/contextaware/v1/location/clients/", username, password);
+            httpGet(ciscoIp + "/online", username, password);
         }
         catch(IOException e){
             System.out.println("Invalid url, username or password");
@@ -67,7 +69,7 @@ public class RESTfulServer {
         // In this case it will allow the path http://IP/api/contextaware/v1/location/clients
         // The anonymous method is an overwrite of HttpHandler, an interface requiring implementation of a handle method.
         server.createContext("/api/contextaware/v1/location/clients", httpExchange -> {
-            if (VerifyConnection(httpExchange) == false){
+            if (!VerifyConnection(httpExchange)){
                 return;
             }
 
@@ -82,7 +84,7 @@ public class RESTfulServer {
         });
 
         server.createContext("/api/contextaware/v1/location/clients/", httpExchange -> {
-            if (VerifyConnection(httpExchange) == false){
+            if (!VerifyConnection(httpExchange)){
                 return;
             }
             // Finds the difference between the URL entered and the one created with this context.
@@ -105,7 +107,7 @@ public class RESTfulServer {
 
         // Adds a mac address to the watchlist. This address is not obfuscated untill it is removed from the watchlist.
         server.createContext("/api/watchlist/add/", httpExchange -> {
-            if (VerifyConnection(httpExchange) == false){
+            if (!VerifyConnection(httpExchange)){
                 return;
             }
             diff_match_patch diff = new diff_match_patch();
@@ -127,7 +129,7 @@ public class RESTfulServer {
 
         // Removes a mac address from the watchlist. After this it will be obfuscated.
         server.createContext("/api/watchlist/remove/", httpExchange -> {
-            if (VerifyConnection(httpExchange) == false){
+            if (!VerifyConnection(httpExchange)){
                 return;
             }
             diff_match_patch diff = new diff_match_patch();
@@ -149,7 +151,7 @@ public class RESTfulServer {
 
         // Simple test to see if server is online. Only used for debugging.
         server.createContext("/online", httpExchange -> {
-            /*if (VerifyConnection(httpExchange) == false){
+           /*  if (!VerifyConnection(httpExchange)){
                 return;
             }*/
 
@@ -173,7 +175,15 @@ public class RESTfulServer {
         System.out.println("Server stopped");
     }
 
-    private static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
+    /**
+     *
+     * @param urlStr The url to get the data from (ip + /api/contextaware/v1/location/clients/)
+     * @param userName a valid username recognised by us
+     * @param userPW a valid password paired with a username
+     * @return the collected data in stringform
+     * @throws java.io.IOException if response code is not 200
+     */
+    protected static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
         URL url = new URL(urlStr);
         //String ip = getIP();
         HttpURLConnection conn =
@@ -202,16 +212,28 @@ public class RESTfulServer {
         return sb.toString();
     }
 
-    private static String Authentication(String name, String password) {
+    /**
+     * Method to check login information
+     * @param name a valid username recognised by us
+     * @param password a valid password paired with a username
+     * @return if the login was successful or not
+     */
+    protected static String Authentication(String name, String password) {
         String temp = name + ":" + password;
         Base64.Encoder enc = Base64.getEncoder();
         String result = enc.encodeToString(temp.getBytes());
         return "Basic " + result;
     }
 
+    /**
+     * Method to test connection
+     * @param httpExchange  // TODO what is this?
+     * @return true if valid login and false if not
+     * @throws IOException if wrong username, password combo
+     */
     // Verifies a HTTP request by examining the basic auth header string and IP.
     // If auth header isn't correct the connection is closed.
-    private static boolean VerifyConnection(HttpExchange httpExchange) throws IOException {
+    protected static boolean VerifyConnection(HttpExchange httpExchange) throws IOException {
         System.out.println("Received request from " + httpExchange.getRemoteAddress().getAddress());
 
         Headers headers = httpExchange.getRequestHeaders();
@@ -229,9 +251,14 @@ public class RESTfulServer {
         return true;
     }
 
+    /**
+     * Method to make all MAC-Addresses unrecognizable
+     * @param allList takes in all the data
+     * @return half the MAC-Address
+     */
     //Keep a list of mac-addresses that we are allowed to track.
     //This code simply uses a SortedSet of addresses, it checks every entry and if we have to obfuscate, we remove the first half.
-    private static AllClient ObfuscateMacAddress(AllClient allList) {
+    protected static AllClient ObfuscateMacAddress(AllClient allList) {
         for (Entry item : allList.getLocations().getEntries()) {
             String oldMacAddress = item.getMacAddress();
 
@@ -243,7 +270,12 @@ public class RESTfulServer {
         return allList;
     }
 
-    private static Client ObfuscateMacAddress(Client singleClient) {
+    /**
+     * Method to hide MAC-Address of the single user you are looking for
+     * @param singleClient Gets the one users info and halfs the MAC-Address
+     * @return the updated info for the choosen user
+     */
+    protected static Client ObfuscateMacAddress(Client singleClient) {
         String oldMacAddress = singleClient.getWirelessClientLocation().getMacAddress();
         if (!watchList.contains(oldMacAddress)) {
             singleClient.getWirelessClientLocation().setMacAddress(oldMacAddress.substring(0, oldMacAddress.length() / 2));
@@ -251,60 +283,113 @@ public class RESTfulServer {
         return singleClient;
     }
 
-    private static void ObfuscateEmail(){
+    protected static void ObfuscateEmail(){
         // TODO IMPLEMENT THIS!
     }
 
+    /**
+     * Method that adds the MAC-Address to the list of known MAC-Addresses
+     * @param macaddress It takes in a MAC-Address
+     */
     public static void AddMacAddressToWatchList(String macaddress) {
-        //Here we need to verify that the input parameter is a valid address.
-        if (!watchList.contains(macaddress))
+        Pattern macVerifier = Pattern.compile("[0-9a-f]{2}([-:])[0-9a-f]{2}(\\1[0-9a-f]{2}){4}$");
+        Matcher matcher = macVerifier.matcher(macaddress);
+        Boolean match = matcher.matches();
+        if (match && !watchList.contains(macaddress))
             watchList.add(macaddress);
     }
 
+    /**
+     * Methos to remove a MAC-Address form the list of MAC-Addresses
+     * @param macaddress
+     */
     public static void RemoveMacAddressToWatchList(String macaddress) {
         //Here we need to verify that the input parameter is a valid address.
         if(watchList.contains(macaddress))
             watchList.remove(macaddress);
+        else {
+            System.out.println("Mac-address '" + macaddress + "' is invalid");
+        }
     }
 
+    /**
+     * Method that converts Json to Gson
+     *  // TODO im not really sure about this
+     * @param json takes in the collected data
+     * @return the data in Gson form
+     */
     // Convert json string to a Java class.
-    private static Client ReadJsonToClient(String json){
+    protected static Client ReadJsonToClient(String json){
         Gson gson = new GsonBuilder().create();
-        Client client = gson.fromJson(json, Client.class);
-        return client;
+        return gson.fromJson(json, Client.class);
     }
 
+    /**
+     *  // TODO as above
+     * @param json
+     * @return
+     */
     // Convert json string to a Java class.
-    private static AllClient ReadJsonToClientList(String json){
+    protected static WirelessClientLocation ReadJsonToWirelessClientLocation(String json){
         Gson gson = new GsonBuilder().create();
-        AllClient clientlist = gson.fromJson(json, AllClient.class);
-        return clientlist;
+        return gson.fromJson(json, WirelessClientLocation.class);
     }
 
-
-    private static <T> String ConvertToJson(T classOfT){
+    /**
+     *  // TODO as above above
+     * @param json
+     * @return
+     */
+    // Convert json string to a Java class.
+    protected static AllClient ReadJsonToClientList(String json){
         Gson gson = new GsonBuilder().create();
-        String result = gson.toJson(classOfT);
-        return result;
+        return gson.fromJson(json, AllClient.class);
     }
 
-    // Method to cconnect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
+    /**
+     * Method that uses an external library to convert data to Json
+     * @param classOfT a var such that it takes anything but intended for string
+     * @param <T> is a generic class
+     * @return the converted data
+     */
+    protected static <T> String ConvertToJson(T classOfT){
+        Gson gson = new GsonBuilder().create();
+        return gson.toJson(classOfT);
+    }
+
+    /**
+     * Method to connect to RESTful service, get response
+     * and convert to object, obfuscate MAC-address and print.
+     * see {@link Server.RESTfulServer#CollectAllClients(String, String, String)}
+     * @param username a valid username recognised by us and bound to a password
+     * @param password a valid password paired with a username
+     * @param userID the MAC-Address of the user you wish to find
+     * @param ip the ip from where to get the data
+     * @return returns the data on the user you found
+     * @throws IOException
+     */
     public static String CollectSingleClient(String username, String password, String userID, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/" + userID, username, password);
         Client client = ReadJsonToClient(requestresult);
         client = ObfuscateMacAddress(client);
-        String result = ConvertToJson(client);
-        return result;
+        return ConvertToJson(client);
     }
 
-    // Method to cconnect to RESTful service, get response and convert to object, obfuscate MAC-address and print.
+    /**
+     * Method to connect to RESTful service, get response
+     * and convert to object, obfuscate MAC-address and print.
+     * @param username a valid username recognised by us
+     * @param password a valid password paired with a username
+     * @param ip    the ip from where to get the data
+     * @return the collected data in Json form
+     * @throws IOException throws exception from GetHttp() if response code is not 200
+     */
     public static String CollectAllClients(String username, String password, String ip) throws IOException {
-        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/", username, password);
+        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/",
+                username, password);
         AllClient allClient = ReadJsonToClientList(requestresult);
         allClient = ObfuscateMacAddress(allClient);
-        String result = ConvertToJson(allClient);
-        return result;
+        return ConvertToJson(allClient);
     }
-
 
 }

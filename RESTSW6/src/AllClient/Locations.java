@@ -13,7 +13,7 @@ public class Locations {
     private Integer totalPages;
     private Integer currentPage;
     private Integer pageSize;
-    private List<Entry> entries = new ArrayList<Entry>();
+    protected List<Entry> entries = new ArrayList<Entry>();
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**

@@ -19,6 +19,7 @@ public class CiscoClient {
 
       // This thread pulls data from Cisco and stores it on the Database
       ciscoPuller.start();
+      System.out.println("ciscoPuller started");
   }
 
     // Pull data from VPN server
@@ -48,7 +49,7 @@ public class CiscoClient {
         return sb.toString();
     }
 
-    private static String Authentication(String name, String password) {
+    protected static String Authentication(String name, String password) {
         String temp = name + ":" + password;
         Base64.Encoder enc = Base64.getEncoder();
         String temp2 = enc.encodeToString(temp.getBytes());
@@ -62,12 +63,12 @@ public class CiscoClient {
     }
 
     // Convert json string to a Java class.
-    protected static AllClient ReadJsonToClientList(String json){
+    private static AllClient ReadJsonToClientList(String json){
         Gson gson = new GsonBuilder().create();
         return gson.fromJson(json, AllClient.class);
     }
 
-    protected static <T> String ConvertToJson(T classOfT){
+    private static <T> String ConvertToJson(T classOfT){
         Gson gson = new GsonBuilder().create();
         return gson.toJson(classOfT);
     }
