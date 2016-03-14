@@ -7,119 +7,68 @@ import javax.annotation.Generated;
 
 @Generated("org.jsonschema2pojo")
 public class Dimension {
-
+    /** This is the length of the map e.g. 500feet*/
     private Double length;
+    /** This is the width of the map e.g. 200feet*/
     private Double width;
+    /** This is the hight of the map, this is relevant for multi floor buildings*/
     private Double height;
+    /** The x-coordinate of the point the relative coordinates are calculated from, this is
+     per standard {0;0} but can be made a real geographical location */
     private Double offsetX;
+    /** The y-coordinate of the point the relative coordinates are calculated from, this is
+     per standard {0;0} but can be made a real geographical location */
     private Double offsetY;
+    /**What unit the locations is in e.g. feet or meters. meaning for feet {1;1} is one feet away
+     form the offset both out the x and the y aksis */
     private String unit;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * 
-     * @return
-     *     The length
-     */
+
     public Double getLength() {
         return length;
     }
 
-    /**
-     * 
-     * @param length
-     *     The length
-     */
     public void setLength(Double length) {
         this.length = length;
     }
 
-    /**
-     * 
-     * @return
-     *     The width
-     */
     public Double getWidth() {
         return width;
     }
 
-    /**
-     * 
-     * @param width
-     *     The width
-     */
     public void setWidth(Double width) {
         this.width = width;
     }
 
-    /**
-     * 
-     * @return
-     *     The height
-     */
     public Double getHeight() {
         return height;
     }
 
-    /**
-     * 
-     * @param height
-     *     The height
-     */
     public void setHeight(Double height) {
         this.height = height;
     }
 
-    /**
-     * 
-     * @return
-     *     The offsetX
-     */
     public Double getOffsetX() {
         return offsetX;
     }
 
-    /**
-     * 
-     * @param offsetX
-     *     The offsetX
-     */
     public void setOffsetX(Double offsetX) {
         this.offsetX = offsetX;
     }
 
-    /**
-     * 
-     * @return
-     *     The offsetY
-     */
     public Double getOffsetY() {
         return offsetY;
     }
 
-    /**
-     * 
-     * @param offsetY
-     *     The offsetY
-     */
     public void setOffsetY(Double offsetY) {
         this.offsetY = offsetY;
     }
 
-    /**
-     * 
-     * @return
-     *     The unit
-     */
     public String getUnit() {
         return unit;
     }
 
-    /**
-     * 
-     * @param unit
-     *     The unit
-     */
     public void setUnit(String unit) {
         this.unit = unit;
     }

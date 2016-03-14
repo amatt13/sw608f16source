@@ -48,7 +48,7 @@ public class CiscoPuller extends Thread {
         // Pull data via httpGEt
         String password = "works",
                 user = "test",
-                target = "http://172.26.120.61:8080/api/contextaware/v1/location/clients",
+                target = "http://172.18.37.70:8080/api/contextaware/v1/location/clients",
                 data = GetCiscoData(target, user, password);
 
         if (!Objects.equals(data, "null")) {

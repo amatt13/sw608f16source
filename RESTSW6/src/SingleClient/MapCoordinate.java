@@ -8,61 +8,35 @@ import javax.annotation.Generated;
 @Generated("org.jsonschema2pojo")
 public class MapCoordinate {
 
+    /**The x coordinate of a device*/
     private Double x;
+    /**The y coordiante of a devide*/
     private Double y;
+    /**The unit used on the map e.g. feet or meters*/
     private String unit;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * 
-     * @return
-     *     The x
-     */
+
     public Double getX() {
         return x;
     }
 
-    /**
-     * 
-     * @param x
-     *     The x
-     */
     public void setX(Double x) {
         this.x = x;
     }
 
-    /**
-     * 
-     * @return
-     *     The y
-     */
     public Double getY() {
         return y;
     }
 
-    /**
-     * 
-     * @param y
-     *     The y
-     */
     public void setY(Double y) {
         this.y = y;
     }
 
-    /**
-     * 
-     * @return
-     *     The unit
-     */
     public String getUnit() {
         return unit;
     }
 
-    /**
-     * 
-     * @param unit
-     *     The unit
-     */
     public void setUnit(String unit) {
         this.unit = unit;
     }

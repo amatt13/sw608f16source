@@ -9,7 +9,7 @@ import javax.annotation.Generated;
 
 @Generated("org.jsonschema2pojo")
 public class Entry {
-
+    /**See {@link SingleClient.WirelessClientLocation#macAddress}*/
     protected String macAddress;
     private Boolean currentlyTracked;
     private Double confidenceFactor;

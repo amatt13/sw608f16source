@@ -22,10 +22,10 @@ import diff_match_patchpack.diff_match_patch;
 
 public class RESTfulServer {
 
-    private static String ciscoIp; /**< This is the ip we get the data from*/
-    protected static String myIp; /**< The user ip aka my ip*/
-    private static String username; /**< username */
-    private static String password; /**<password */
+    private static String ciscoIp; /** This is the ip we get the data from*/
+    protected static String myIp; /** The user ip aka my ip*/
+    private static String username; /** username */
+    private static String password; /**password */
 
     protected static final int port = 8080;
     protected static final int SizeofConnectionQueue = 1;
@@ -176,7 +176,7 @@ public class RESTfulServer {
     }
 
     /**
-     *
+     * Makes the connection to Cisco.
      * @param urlStr The url to get the data from (ip + /api/contextaware/v1/location/clients/)
      * @param userName a valid username recognised by us
      * @param userPW a valid password paired with a username
@@ -227,7 +227,7 @@ public class RESTfulServer {
 
     /**
      * Method to test connection
-     * @param httpExchange  // TODO what is this?
+     * @param httpExchange  All the information about connection, user ip, request, server ip
      * @return true if valid login and false if not
      * @throws IOException if wrong username, password combo
      */
@@ -336,7 +336,7 @@ public class RESTfulServer {
     }
 
     /**
-     *  // TODO as above above
+     *  Finds all devices on the network //TODO as above above
      * @param json
      * @return
      */
