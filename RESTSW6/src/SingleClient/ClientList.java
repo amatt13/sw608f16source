@@ -2,9 +2,6 @@ package SingleClient;
 
 import java.util.List;
 
-/**
- * Created by Simon on 16/02/2016.
- */
 public class ClientList {
 
     private int totalPages;

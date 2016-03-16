@@ -10,16 +10,23 @@ import javax.annotation.Generated;
 @Generated("org.jsonschema2pojo")
 public class WirelessClientLocation {
 
+    /**MAC-Address of a user*/
     private String macAddress;
+    /**Is the user currently being tracked?*/
     private Boolean currentlyTracked;
+    /**within how large an area of the given location are the system sure the user is e.g. "the user is within 10 feet
+     * of this location"*/
     private Double confidenceFactor;
+    /**The Ip of the user being looked at*/
     private List<String> ipAddress = new ArrayList<String>();
     private String ssId;
     private String band;
     private String apMacAddress;
     private Boolean isGuestUser;
     private String dot11Status;
+    /**What map is the user on {@link SingleClient.MapInfo}*/
     private SingleClient.MapInfo MapInfo;
+    /**Where is the user on the map {@link SingleClient.MapCoordinate}*/
     private SingleClient.MapCoordinate MapCoordinate;
     private SingleClient.Statistics Statistics;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();

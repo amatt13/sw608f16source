@@ -7,24 +7,15 @@ import javax.annotation.Generated;
 
 @Generated("org.jsonschema2pojo")
 public class Client {
-
+    /**{@link SingleClient.WirelessClientLocation}*/
     private SingleClient.WirelessClientLocation WirelessClientLocation;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * 
-     * @return
-     *     The WirelessClientLocation
-     */
+
     public SingleClient.WirelessClientLocation getWirelessClientLocation() {
         return WirelessClientLocation;
     }
 
-    /**
-     * 
-     * @param WirelessClientLocation
-     *     The WirelessClientLocation
-     */
     public void setWirelessClientLocation(SingleClient.WirelessClientLocation WirelessClientLocation) {
         this.WirelessClientLocation = WirelessClientLocation;
     }

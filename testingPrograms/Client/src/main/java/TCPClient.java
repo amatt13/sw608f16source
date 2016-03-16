@@ -33,6 +33,7 @@ class TCPClient {
         System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/84:38:38:ff:c5:4b", "test", "works"));
         //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/watchlist/remove/00:00:2a:01:00:0a", "test", "works"));
         //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/00:00:2a:01:00:0a", "test", "works"));
+
     }
     private static String Authentication(String name, String password) {
         String temp = name + ":" + password;
