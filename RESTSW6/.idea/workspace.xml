@@ -5,42 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d36aa737-1bf7-4808-b1aa-1ab0f5b48211" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServerTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoClientTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoPullerTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Junit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Server/RESTfulServerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rest_client/.idea/libraries/junit.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoClientTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPullerTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RESTSW6/Server/HelloWorldClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Server/HelloWorldClient.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RESTSW6_jar/RESTSW6.jar" afterPath="$PROJECT_DIR$/out/artifacts/RESTSW6_jar/RESTSW6.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/AllClient.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/AllClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Entry.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Locations.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Locations.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServer.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/diff_match_patchpack/diff_match_patch$1.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/diff_match_patchpack/diff_match_patch$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/diff_match_patchpack/diff_match_patch.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/diff_match_patchpack/diff_match_patch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoClient.class" afterPath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoPuller.class" afterPath="$PROJECT_DIR$/../rest_client/out/production/rest_client/CiscoDataTransfer/CiscoPuller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/out/production/rest_client/SingleClient/Client.class" afterPath="$PROJECT_DIR$/../rest_client/out/production/rest_client/SingleClient/Client.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/out/artifacts/main_jar/main.jar" afterPath="$PROJECT_DIR$/../testingPrograms/out/artifacts/main_jar/main.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/out/production/main/TCPClient.class" afterPath="$PROJECT_DIR$/../testingPrograms/out/production/main/TCPClient.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTSW6.iml" afterPath="$PROJECT_DIR$/RESTSW6.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/AllClient.java" afterPath="$PROJECT_DIR$/src/AllClient/AllClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/Entry.java" afterPath="$PROJECT_DIR$/src/AllClient/Entry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/Locations.java" afterPath="$PROJECT_DIR$/src/AllClient/Locations.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/RESTfulServer.java" afterPath="$PROJECT_DIR$/src/Server/RESTfulServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../rest_client/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/rest_client.iml" afterPath="$PROJECT_DIR$/../rest_client/rest_client.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoClient.java" afterPath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPuller.java" afterPath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPuller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/src/SingleClient/Client.java" afterPath="$PROJECT_DIR$/../rest_client/src/SingleClient/Client.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../testingPrograms/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/Client/src/main/java/TCPClient.java" afterPath="$PROJECT_DIR$/../testingPrograms/Client/src/main/java/TCPClient.java" />
     </list>
     <ignored path="RESTSW6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,33 +42,18 @@
       <file leaf-file-name="RESTfulServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26568267">
-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+            <state vertical-scroll-proportion="-0.5843829">
+              <caret line="371" column="7" selection-start-line="371" selection-start-column="7" selection-end-line="371" selection-end-column="7" />
               <folding>
                 <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+                <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
                 <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RESTfulServerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -139,10 +97,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
-    <option name="y" value="-920" />
-    <option name="width" value="1066" />
-    <option name="height" value="1656" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -169,8 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -223,6 +179,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -231,10 +189,10 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/plugins/testng/lib/testng.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
@@ -915,6 +873,8 @@
       <workItem from="1457948146627" duration="99000" />
       <workItem from="1457948254830" duration="525000" />
       <workItem from="1457948981988" duration="497000" />
+      <workItem from="1457950964011" duration="786000" />
+      <workItem from="1458122075296" duration="4474000" />
     </task>
     <servers />
   </component>
@@ -951,7 +911,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73158000" />
+    <option name="totallyTimeSpent" value="78418000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -963,21 +923,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-920" width="1066" height="1656" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.105433375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30441898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1904762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24950299" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1036,7 +996,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="92" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1058,17 +1018,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1077,9 +1034,59 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,17 +1096,14 @@
           <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1108,9 +1112,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,17 +1122,14 @@
           <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1139,9 +1138,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,17 +1148,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1180,17 +1174,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1209,17 +1200,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1238,17 +1226,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1267,17 +1252,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1296,17 +1278,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1325,17 +1304,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1354,17 +1330,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1511,9 +1484,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#911#912#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#878#879#0" expanded="false" />
+            <element signature="e#911#912#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1523,14 +1496,14 @@
         <state vertical-scroll-proportion="0.11371238">
           <caret line="10" column="47" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#303#319#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#303#319#0" expanded="false" />
+            <element signature="e#476#477#0" expanded="false" />
+            <element signature="e#521#522#0" expanded="false" />
+            <element signature="e#853#854#0" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#969#970#0" expanded="false" />
+            <element signature="e#1027#1028#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1560,29 +1533,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="5" selection-start-line="126" selection-start-column="5" selection-end-line="126" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26568267">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+        <state vertical-scroll-proportion="-0.5843829">
+          <caret line="371" column="7" selection-start-line="371" selection-start-column="7" selection-end-line="371" selection-end-column="7" />
           <folding>
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ReadJsonToClient#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ReadJsonToWirelessClientLocation#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ReadJsonToClientList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="docComment;method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1593,10 +1561,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>RESTSW6:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1644,6 +1614,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

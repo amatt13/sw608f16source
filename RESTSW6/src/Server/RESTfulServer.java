@@ -52,10 +52,7 @@ public class RESTfulServer {
         ciscoIp = "http://" + args[0];
         username = args[1];
         password = args[2];
-        try {
-            httpGet(ciscoIp + "/online", username, password);
-        }
-        catch(IOException e){
+        if(httpGet(ciscoIp + "/online", username, password) == null){
             System.out.println("Invalid url, username or password");
             return;
         }
@@ -183,30 +180,67 @@ public class RESTfulServer {
      * @return the collected data in stringform
      * @throws java.io.IOException if response code is not 200
      */
-    protected static String httpGet(String urlStr, String userName, String userPW) throws java.io.IOException {
-        URL url = new URL(urlStr);
+    protected static String httpGet(String urlStr, String userName, String userPW){
+        URL url = null;
+        try {
+            url = new URL(urlStr);
+        } catch (MalformedURLException e) {
+            return null;
+
+        }
         //String ip = getIP();
         HttpURLConnection conn =
-                (HttpURLConnection) url.openConnection();
+                null;
+        try {
+            conn = (HttpURLConnection) url.openConnection();
+        } catch (IOException e) {
+            return null;
+        }
         //Request type
-        conn.setRequestMethod("GET");
+        try {
+            conn.setRequestMethod("GET");
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+            return null;
+        }
         //Request headers
         conn.setRequestProperty("Authorization", Authentication(userName, userPW));
         conn.setRequestProperty("Accept", "application/json");
 
-        if (conn.getResponseCode() != 200) {
-            throw new IOException(conn.getResponseMessage());
+        try {
+            if (conn.getResponseCode() != 200) {
+                return conn.getResponseMessage();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
         }
 
         // Buffer the result into a string
-        BufferedReader rd = new BufferedReader(
-                new InputStreamReader(conn.getInputStream()));
+        BufferedReader rd = null;
+        try {
+            rd = new BufferedReader(
+                    new InputStreamReader(conn.getInputStream()));
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
         StringBuilder sb = new StringBuilder();
         String line;
-        while ((line = rd.readLine()) != null) {
-            sb.append(line);
+        try {
+            while ((line = rd.readLine()) != null) {
+                sb.append(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
         }
-        rd.close();
+        try {
+            rd.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
 
         conn.disconnect();
         return sb.toString();
@@ -385,7 +419,7 @@ public class RESTfulServer {
      * @throws IOException throws exception from GetHttp() if response code is not 200
      */
     public static String CollectAllClients(String username, String password, String ip) throws IOException {
-        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/",
+        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients",
                 username, password);
         AllClient allClient = ReadJsonToClientList(requestresult);
         allClient = ObfuscateMacAddress(allClient);
