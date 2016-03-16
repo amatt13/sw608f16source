@@ -9,8 +9,8 @@ import javax.annotation.Generated;
 public class MapInfo {
 
     private String mapHierarchyString;
-    private String floorRefId; /** The */
-    private SingleClient.Dimension Dimension; /** {@link SingleClient.Dimension}*/
+    private String floorRefId;
+    private SingleClient.Dimension Dimension; /** an instans of {@link SingleClient.Dimension}*/
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
 

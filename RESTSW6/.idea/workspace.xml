@@ -5,20 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d36aa737-1bf7-4808-b1aa-1ab0f5b48211" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/RESTSW6_jar/RESTSW6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/RESTSW6_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/RESTSW6/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RESTSW6/Server/HelloWorldClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Server/HelloWorldClient.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServer.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServerTest.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/Server/RESTfulServerTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/out/artifacts/main_jar/main.jar" afterPath="$PROJECT_DIR$/../testingPrograms/out/artifacts/main_jar/main.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/out/production/main/TCPClient.class" afterPath="$PROJECT_DIR$/../testingPrograms/out/production/main/TCPClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/RESTSW6_jar/RESTSW6.jar" afterPath="$PROJECT_DIR$/out/artifacts/RESTSW6_jar/RESTSW6.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/AllClient.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/AllClient.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Dimension.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Dimension.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Entry.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Entry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Locations.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/Locations.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/MapCoordinate.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/MapCoordinate.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/MapInfo.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/AllClient/MapInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/RESTSW6/SingleClient/ClientList.class" afterPath="$PROJECT_DIR$/out/production/RESTSW6/SingleClient/ClientList.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Jersey_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Jersey_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/AllClient.java" afterPath="$PROJECT_DIR$/src/AllClient/AllClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/Dimension.java" afterPath="$PROJECT_DIR$/src/AllClient/Dimension.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/Entry.java" afterPath="$PROJECT_DIR$/src/AllClient/Entry.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/Locations.java" afterPath="$PROJECT_DIR$/src/AllClient/Locations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/MapCoordinate.java" afterPath="$PROJECT_DIR$/src/AllClient/MapCoordinate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AllClient/MapInfo.java" afterPath="$PROJECT_DIR$/src/AllClient/MapInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/RESTfulServer.java" afterPath="$PROJECT_DIR$/src/Server/RESTfulServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SingleClient/MapInfo.java" afterPath="$PROJECT_DIR$/src/SingleClient/MapInfo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../rest_client/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPuller.java" afterPath="$PROJECT_DIR$/../rest_client/src/CiscoDataTransfer/CiscoPuller.java" />
     </list>
     <ignored path="RESTSW6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,116 +50,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RESTfulServer.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RESTfulServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.055555">
-              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.46658567">
+              <caret line="327" column="58" selection-start-line="327" selection-start-column="58" selection-end-line="327" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
                 <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
                 <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
                 <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
                 <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
                 <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-                <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+                <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SingleClient/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40048543">
-              <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-              <folding>
-                <element signature="e#355#371#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpHandler.class" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.235294">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diff_match_patch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2457" column="36" selection-start-line="2457" selection-start-column="35" selection-end-line="2457" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AllClient/AllClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Locations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AllClient/Locations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#721#722#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#946#947#0" expanded="true" />
-                <element signature="e#992#993#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1108#1109#0" expanded="true" />
-                <element signature="e#1148#1149#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1217#1218#0" expanded="true" />
-                <element signature="e#1268#1269#0" expanded="true" />
-                <element signature="e#1306#1307#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-                <element signature="e#1482#1483#0" expanded="true" />
-                <element signature="e#1540#1541#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AllClient/Entry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WirelessClientLocation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SingleClient/WirelessClientLocation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="233" column="14" selection-start-line="233" selection-start-column="14" selection-end-line="233" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -181,12 +95,16 @@
         <option value="$PROJECT_DIR$/src/example/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/example/RESTfulServe.java" />
         <option value="$PROJECT_DIR$/src/example/RESTfulServer.java" />
-        <option value="$PROJECT_DIR$/src/AllClient/Locations.java" />
-        <option value="$PROJECT_DIR$/src/AllClient/Entry.java" />
-        <option value="$PROJECT_DIR$/src/AllClient/AllClient.java" />
         <option value="$PROJECT_DIR$/src/SingleClient/Client.java" />
-        <option value="$PROJECT_DIR$/src/Server/RESTfulServer.java" />
         <option value="$PROJECT_DIR$/src/Server/RESTfulServerTest.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/Locations.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/AllClient.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/Dimension.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/Entry.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/MapCoordinate.java" />
+        <option value="$PROJECT_DIR$/src/AllClient/MapInfo.java" />
+        <option value="$PROJECT_DIR$/src/SingleClient/MapInfo.java" />
+        <option value="$PROJECT_DIR$/src/Server/RESTfulServer.java" />
       </list>
     </option>
   </component>
@@ -226,6 +144,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,10 +177,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SingleClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -280,60 +196,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSW6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSW6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSW6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSW6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="diff_match_patchpack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSW6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RESTSW6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AllClient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -861,12 +725,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RESTfulServerTest_testCollectAllClients - 2016.03.08 at 10h 43m 25s.xml">
-      <configuration name="RESTfulServerTest.testCollectAllClients" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RESTfulServerTest_testCollectAllClients - 2016.03.08 at 10h 43m 52s.xml">
-      <configuration name="RESTfulServerTest.testCollectAllClients" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RESTfulServerTest_testCollectAllClients - 2016.03.08 at 10h 49m 02s.xml">
       <configuration name="RESTfulServerTest.testCollectAllClients" configurationId="JUnit" />
     </history-entry>
@@ -874,6 +732,12 @@
       <configuration name="RESTfulServerTest.testCollectAllClients" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RESTfulServerTest_testCollectAllClients - 2016.03.08 at 11h 24m 00s.xml">
+      <configuration name="RESTfulServerTest.testCollectAllClients" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest_testCollectAllClients - 2016.03.14 at 15h 54m 44s.xml">
+      <configuration name="RESTfulServerTest.testCollectAllClients" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RESTfulServerTest_testCollectAllClients - 2016.03.16 at 11h 10m 09s.xml">
       <configuration name="RESTfulServerTest.testCollectAllClients" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RESTfulServerTest_testMain - 2016.03.08 at 10h 42m 03s.xml">
@@ -909,30 +773,30 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25233644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16023579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24950299" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29656863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29656863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25700936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -940,26 +804,26 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24950299" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29546946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29656863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25804335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296126" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19582506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988358" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25554258" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16023579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902583" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -978,7 +842,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="90" />
+      <option name="time" value="93" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -994,44 +858,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AllClient/Locations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1268#1269#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AllClient/Entry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SingleClient/WirelessClientLocation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1054,13 +880,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1079,13 +907,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1104,13 +934,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1129,13 +961,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1154,13 +988,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1179,13 +1015,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1204,13 +1042,15 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1313,13 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CertificateHandler/CertificateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23448277">
@@ -1334,47 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/gson-2.6.1.jar!/com/google/gson/GsonBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.235294">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2961166">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SingleClient/MapInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26245442">
-          <caret line="12" column="80" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="80" />
-          <folding>
-            <element signature="e#396#412#0" expanded="false" />
-            <element signature="e#460#461#0" expanded="false" />
-            <element signature="e#501#502#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
-            <element signature="e#666#667#0" expanded="false" />
-            <element signature="e#699#700#0" expanded="false" />
-            <element signature="e#751#752#0" expanded="false" />
-            <element signature="e#795#796#0" expanded="false" />
-            <element signature="e#847#848#0" expanded="false" />
-            <element signature="e#879#880#0" expanded="false" />
-            <element signature="e#945#946#0" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#1047#1048#0" expanded="false" />
-            <element signature="e#1095#1096#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1221#1222#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SingleClient/Statistics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1382,144 +1174,208 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SingleClient/ClientList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SingleClient/Dimension.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25538972">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#1063#1079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AllClient/Statistics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21890548">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AllClient/Dimension.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.69320065">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SingleClient/MapCoordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43781096">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="e#437#453#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2457" column="36" selection-start-line="2457" selection-start-column="35" selection-end-line="2457" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AllClient/AllClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="-5.1764708">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AllClient/Locations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="67" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-            <element signature="e#1268#1269#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-          </folding>
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingleClient/ClientList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingleClient/Dimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingleClient/MapCoordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllClient/Dimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18712029">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AllClient/Entry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding />
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllClient/MapCoordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllClient/MapInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingleClient/MapInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24058323">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CertificateHandler/CertificateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42770353">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_match_patchpack/diff_match_patch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6749175">
+          <caret line="1806" column="0" selection-start-line="1806" selection-start-column="0" selection-end-line="1806" selection-end-column="0" />
+          <folding>
+            <element signature="class#LinesToCharsResult#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#LinesToCharsResult#0;class#LinesToCharsResult#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_main#1;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_main#2;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_compute#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="e#7572#7578#0" expanded="true" />
+            <element signature="method#diff_lineMode#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_bisect#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="e#16231#16237#0" expanded="true" />
+            <element signature="method#diff_bisectSplit#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_linesToChars#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="e#17830#17838#0" expanded="true" />
+            <element signature="e#17889#17906#0" expanded="true" />
+            <element signature="method#diff_linesToCharsMunge#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_charsToLines#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_commonSuffix#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_commonOverlap#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_halfMatch#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_halfMatchI#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_cleanupSemantic#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_cleanupSemanticLossless#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_cleanupSemanticScore#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_cleanupEfficiency#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_cleanupMerge#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_xIndex#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_prettyHtml#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_text1#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_text2#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_levenshtein#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_toDelta#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#diff_fromDelta#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#match_main#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#match_bitap#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#match_bitapScore#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#match_alphabet#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_addContext#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_make#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_make#1;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_make#3;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_deepCopy#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_apply#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_addPadding#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_splitMax#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_toText#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#patch_fromText#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#Diff#0;class#Diff#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#toString#0;class#Diff#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#hashCode#0;class#Diff#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#equals#0;class#Diff#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="class#Patch#0;class#diff_match_patch#0" expanded="false" />
+            <element signature="method#unescapeForEncodeUriCompatability#0;class#diff_match_patch#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AllClient/AllClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32673267">
+          <caret line="11" column="58" selection-start-line="11" selection-start-column="58" selection-end-line="11" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SingleClient/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7986799">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="e#355#371#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.6.1.jar!/com/google/gson/GsonBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47902098">
+          <caret line="214" column="16" selection-start-line="214" selection-start-column="16" selection-end-line="214" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SingleClient/WirelessClientLocation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="233" column="14" selection-start-line="233" selection-start-column="14" selection-end-line="233" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.21782178">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/jre/lib/rt.jar!/com/sun/net/httpserver/HttpHandler.class">
+    <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.235294">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="2.5733113">
+          <caret line="189" column="30" selection-start-line="189" selection-start-column="30" selection-end-line="189" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.055555">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.46658567">
+          <caret line="327" column="58" selection-start-line="327" selection-start-column="58" selection-end-line="327" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="initializer##0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#httpGet#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#Authentication#0;class#RESTfulServer#0" expanded="false" />
+            <element signature="method#VerifyConnection#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateMacAddress#1;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ObfuscateEmail#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#AddMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#RemoveMacAddressToWatchList#0;class#RESTfulServer#0" expanded="false" />
             <element signature="method#ConvertToJson#0;class#RESTfulServer#0" expanded="false" />
-            <element signature="method#CollectSingleClient#0;class#RESTfulServer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SingleClient/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40048543">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-          <folding>
-            <element signature="e#355#371#0" expanded="true" />
+            <element signature="method#CollectAllClients#0;class#RESTfulServer#0" expanded="false" />
           </folding>
         </state>
       </provider>

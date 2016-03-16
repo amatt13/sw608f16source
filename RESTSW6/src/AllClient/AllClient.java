@@ -9,23 +9,13 @@ import javax.annotation.Generated;
 @Generated("org.jsonschema2pojo")
 public class AllClient {
 
-    public Locations Locations;
+    public Locations Locations;/**An instance of the class {@link Locations} */
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    /**
-     * 
-     * @return
-     *     The Locations
-     */
     public Locations getLocations() {
         return Locations;
     }
 
-    /**
-     * 
-     * @param Locations
-     *     The Locations
-     */
     public void setLocations(Locations Locations) {
         this.Locations = Locations;
     }

@@ -9,7 +9,7 @@ import javax.annotation.Generated;
 
 @Generated("org.jsonschema2pojo")
 
-/**See {@link SingleClient.ClientList} I like to murder little dogs*/
+/**See {@link SingleClient.ClientList} as those are alike */
 public class Locations {
 
     /**Total amount of pages */

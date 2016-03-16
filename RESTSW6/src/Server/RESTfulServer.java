@@ -301,7 +301,7 @@ public class RESTfulServer {
 
     /**
      * Methos to remove a MAC-Address form the list of MAC-Addresses
-     * @param macaddress
+     * @param macaddress takes in the detected MAC-Address
      */
     public static void RemoveMacAddressToWatchList(String macaddress) {
         //Here we need to verify that the input parameter is a valid address.
@@ -313,10 +313,10 @@ public class RESTfulServer {
     }
 
     /**
-     * Method that converts Json to Gson
-     *  // TODO im not really sure about this
-     * @param json takes in the collected data
-     * @return the data in Gson form
+     * Method that
+     * Takes Json data and puts in into a Client object, see {@link SingleClient.Client}
+     * @param json the data from Cisco in Json form
+     * @return a Client with parameters assigned
      */
     // Convert json string to a Java class.
     protected static Client ReadJsonToClient(String json){
@@ -325,9 +325,9 @@ public class RESTfulServer {
     }
 
     /**
-     *  // TODO as above
-     * @param json
-     * @return
+     * As {@link RESTfulServer#ReadJsonToClient(String)} but directly to {@link SingleClient.WirelessClientLocation}
+     * @param json the data from Cisco in Json form
+     * @return a WirelessClientLocation with parameters assigned
      */
     // Convert json string to a Java class.
     protected static WirelessClientLocation ReadJsonToWirelessClientLocation(String json){
@@ -336,9 +336,9 @@ public class RESTfulServer {
     }
 
     /**
-     *  Finds all devices on the network //TODO as above above
-     * @param json
-     * @return
+     *  Takes Json data and puts in into a AllClient object, see {@link AllClient}
+     * @param json the data from Cisco in Json form
+     * @return the locatins for all clients
      */
     // Convert json string to a Java class.
     protected static AllClient ReadJsonToClientList(String json){
@@ -366,7 +366,7 @@ public class RESTfulServer {
      * @param userID the MAC-Address of the user you wish to find
      * @param ip the ip from where to get the data
      * @return returns the data on the user you found
-     * @throws IOException
+     * @throws IOException if incorrect username password combination
      */
     public static String CollectSingleClient(String username, String password, String userID, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/" + userID, username, password);
