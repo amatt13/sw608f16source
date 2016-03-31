@@ -102,7 +102,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client/src/CertificateHandler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RESTSW6" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -561,12 +561,12 @@
       <workItem from="1459244389725" duration="700000" />
       <workItem from="1459255202638" duration="791000" />
       <workItem from="1459330335007" duration="1414000" />
-      <workItem from="1459339281889" duration="2830000" />
+      <workItem from="1459339281889" duration="3437000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9854000" />
+    <option name="totallyTimeSpent" value="10461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />

@@ -36,12 +36,12 @@ public class RESTfulServer {
 
     // Gets the host address. Might cause trouble if several or no addresses returned.
     static {
-        //try {
-            myIp = "127.0.0.1";
-        //} catch (UnknownHostException e) {
-         //   System.out.println("Unknown Host Address");
-         //   e.printStackTrace();
-        //}
+        try {
+            myIp = Inet4Address.getLocalHost().getHostAddress();
+        } catch (UnknownHostException e) {
+           System.out.println("Unknown Host Address");
+           e.printStackTrace();
+        }
     }
 
     protected static TreeSet<String> watchList = new TreeSet<String>();
@@ -56,13 +56,14 @@ public class RESTfulServer {
         ciscoIp = "http://" + args[0];
         username = args[1];
         password = args[2];
-        if (httpGet(ciscoIp + "/online", username, password) == null) {
+        /*if (httpGet(ciscoIp + "/online", username, password) == null) {
             try {
                 httpGet(ciscoIp + "/api/contextaware/v1/location/clients/", username, password);
             } catch (Exception e) {
                 System.out.println("Invalid url, username or password");
                 return;
             }
+        }*/
 
             HttpServer server = HttpServer.create(new InetSocketAddress(myIp, port), SizeofConnectionQueue);
 
@@ -178,7 +179,6 @@ public class RESTfulServer {
             server.stop(0);
             System.out.println("Server stopped");
         }
-    }
 
     /**
      * Makes the connection to Cisco.
