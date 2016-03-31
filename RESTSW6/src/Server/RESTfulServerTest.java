@@ -21,7 +21,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 /**
- * Created by Anders on 04-03-16.
+ * Created on 04-03-16.
  */
 public class RESTfulServerTest {
 

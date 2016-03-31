@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7177a80d-3472-4ab1-ae18-dc0cd5b3c70c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/out/artifacts/main_jar/main.jar" afterPath="$PROJECT_DIR$/../testingPrograms/out/artifacts/main_jar/main.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/out/production/main/TCPClient.class" afterPath="$PROJECT_DIR$/../testingPrograms/out/production/main/TCPClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/RESTSERVER.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/RESTSERVER.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/RESTfulServer.java" afterPath="$PROJECT_DIR$/src/Server/RESTfulServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/Client/src/main/java/TCPClient.java" afterPath="$PROJECT_DIR$/../testingPrograms/Client/src/main/java/TCPClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Server/RESTfulServerTest.java" afterPath="$PROJECT_DIR$/src/Server/RESTfulServerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../testingPrograms/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../testingPrograms/.idea/workspace.xml" />
     </list>
     <ignored path="RESTSW6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +33,11 @@
       <file leaf-file-name="RESTfulServer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3466899">
-              <caret line="327" column="43" selection-start-line="327" selection-start-column="38" selection-end-line="327" selection-end-column="43" />
+            <state vertical-scroll-proportion="-10.254355">
+              <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1457#1465#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +111,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../astep" />
   </component>
-  <component name="RunManager" selected="Application.RESTSERVER">
+  <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -532,9 +534,6 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.RESTSERVER" />
-    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -552,12 +551,12 @@
       <workItem from="1458564521049" duration="392000" />
       <workItem from="1458641788751" duration="6906000" />
       <workItem from="1458811520361" duration="956000" />
-      <workItem from="1459341302016" duration="233000" />
+      <workItem from="1459341302016" duration="376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10122000" />
+    <option name="totallyTimeSpent" value="10265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1378" height="735" extended-state="0" />
@@ -617,6 +616,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1457#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -627,6 +627,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1457#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -637,6 +638,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1457#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -647,6 +649,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1457#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,16 +660,18 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1457#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Server/RESTfulServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3466899">
-          <caret line="327" column="43" selection-start-line="327" selection-start-column="38" selection-end-line="327" selection-end-column="43" />
+        <state vertical-scroll-proportion="-10.254355">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1457#1465#0" expanded="true" />
           </folding>
         </state>
       </provider>
