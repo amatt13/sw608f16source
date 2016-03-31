@@ -1,13 +1,14 @@
 import java.io.*;
 import java.net.*;
 import java.util.Base64;
+import CertificateHandler.*;
 
 class TCPClient {
     public static void main(String argv[]) throws Exception
     {
         String sentence;
         String modifiedSentence;
-
+        new CertificateHandler();
 
         String inFromUser;
         //for(int i = 0; i < 2;i++) {
@@ -23,14 +24,16 @@ class TCPClient {
             System.out.println(modifiedSentence);
             clientSocket.close();
                 */
+        //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/online", "test", "works"));
+        //System.out.println("FROM SERVER: " + httpGet("https://172.18.37.70/api/contextaware/v1/location/clients", "mse-proxy", "Mam0iDe9"));
+        System.out.println( httpGet("https://172.18.37.70/api/contextaware/v1/location/clients", "mse-proxy", "Mam0iDe9"));
 
-        System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/online", "test", "works"));
         //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/C0:63:94:1A:DD:8D", "test1", "worksk"));
-        System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients", "test", "works"));
+        //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients", "test", "works"));
         // REMEMBER LOWER CASE HEX
-        System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/fe80:0000:0000:0000:8638:38ff:feff:c54b", "test", "works"));
-        System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/watchlist/add/84:38:38:ff:c5:4b", "test", "works"));
-        System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/84:38:38:ff:c5:4b", "test", "works"));
+        //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/fe80:0000:0000:0000:8638:38ff:feff:c54b", "test", "works"));
+        //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/watchlist/add/84:38:38:ff:c5:4b", "test", "works"));
+        //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/84:38:38:ff:c5:4b", "test", "works"));
         //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/watchlist/remove/00:00:2a:01:00:0a", "test", "works"));
         //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/00:00:2a:01:00:0a", "test", "works"));
 

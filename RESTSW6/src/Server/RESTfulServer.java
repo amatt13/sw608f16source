@@ -32,12 +32,12 @@ public class RESTfulServer {
 
     // Gets the host address. Might cause trouble if several or no addresses returned.
     static {
-        try {
-            myIp = InetAddress.getLocalHost().getHostAddress();
-        } catch (UnknownHostException e) {
-            System.out.println("Unknown Host Address");
-            e.printStackTrace();
-        }
+        //try {
+            myIp = "127.0.0.1";
+        //} catch (UnknownHostException e) {
+         //   System.out.println("Unknown Host Address");
+         //   e.printStackTrace();
+        //}
     }
 
     protected static TreeSet<String> watchList = new TreeSet<String>();
@@ -49,17 +49,10 @@ public class RESTfulServer {
             System.out.println("Example: 64.103.26.61 admin admin");
             return;
         }
-        ciscoIp = "https://" + args[0];
+        ciscoIp = "http://" + args[0];
         username = args[1];
         password = args[2];
-<<<<<<< HEAD
         if(httpGet(ciscoIp + "/online", username, password) == null){
-=======
-        try {
-            httpGet(ciscoIp + "/api/contextaware/v1/location/clients/", username, password);
-        }
-        catch(IOException e){
->>>>>>> a96fc0f7c4485b7039b5089bf5458d17a6c963e0
             System.out.println("Invalid url, username or password");
             return;
         }
@@ -280,7 +273,7 @@ public class RESTfulServer {
         Headers headers = httpExchange.getRequestHeaders();
         List<String> passphrase = headers.get("Authorization");
         if (passphrase == null || !passphrase.get(0).equals("Basic dGVzdDp3b3Jrcw==")){ // test:works
-            httpExchange.sendResponseHeaders(200, 0);
+            httpExchange.sendResponseHeaders(401, 0);
             OutputStream os = httpExchange.getResponseBody();
             String response = "Cannot authenticate. Wrong username + password combo.";
             System.out.println(response);
