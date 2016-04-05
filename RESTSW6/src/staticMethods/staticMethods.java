@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 import AllClient.*;
-import SingleClient.*;
+import Client.*;
 import CertificateHandler.CertificateHandler;
 
 /**

@@ -1,25 +1,19 @@
 package Server;
 
-import AllClient.AllClient;
-import CertificateHandler.CertificateHandler;
-import SingleClient.Client;
-import AllClient.Entry;
-import AllClient.Locations;
-import SingleClient.WirelessClientLocation;
+import AllClient.*;
+import Client.Client;
+import Client.*;
 import com.sun.net.httpserver.HttpServer;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.InetSocketAddress;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
-import static staticMethods.staticMethods.*;
 
 /**
  * Created on 04-03-16.
@@ -30,7 +24,7 @@ public class RESTfulServerTest {
     static List<Entry> smallClientList = new ArrayList<Entry>();
     static Entry entry = new Entry();
     static Client client = new Client();
-    static WirelessClientLocation wirelessClientLocation = new WirelessClientLocation();
+    static WirelessClientLocation  wirelessClientLocation = new WirelessClientLocation ();
     static Locations location = new Locations();
     static AllClient allClient = new AllClient();
     static HttpServer localServer;

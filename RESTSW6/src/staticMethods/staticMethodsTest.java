@@ -1,7 +1,6 @@
 package staticMethods;
 
-import SingleClient.Client;
-import SingleClient.WirelessClientLocation;
+import Client.*;
 import com.sun.net.httpserver.HttpServer;
 import AllClient.*;
 import org.junit.AfterClass;
@@ -35,48 +34,54 @@ public class staticMethodsTest {
     static HttpServer localServer;
     static String address,
             localIP,
-            wirelessCLientLocationDesc = "{\"macAddress\":\"01:02:03:04:05:06\"," +
-                    "\"currentlyTracked\":true,\"confidenceFactor\":10.0," +
-                    "\"ipAddress\":[\"01.02.03.456\"],\"ssId\":\"test\",\"band\":" +
-                    "\"UNKNOWN\",\"apMacAddress\":\"0a:0b:0c:0d:0e:0f\"," +
-                    "\"isGuestUser\":false,\"dot11Status\":\"ASSOCIATED\",\"MapInfo" +
-                    "\":{\"mapHierarchyString\":\"DevNetCampus>DevNetBuilding>DevNetZone" +
-                    "\",\"floorRefId\":723413320329068590,\"Dimension\":{\"length" +
-                    "\":81.9,\"width\":307.0,\"height\":16.5,\"offsetX\":0.0,\"" +
-                    "offsetY\":0.0,\"unit\":\"FEET\"}},\"MapCoordinate\":{\"x\"" +
-                    ":194.47,\"y\":51.8,\"unit\":\"FEET\"},\"Statistics\":{\"" +
-                    "currentServerTime\":\"2016-03-07T09:17:48.631+0000\",\"" +
-                    "firstLocatedTime\":\"2016-02-04T23:44:29.634+0000\",\"" +
-                    "lastLocatedTime\":\"2016-03-07T09:18:18.121+0000\",\"" +
-                    "additionalProperties\":{}},\"additionalProperties\":{}}",
-            allClientDesc = "{\"Locations\":{\"totalPages\":1,\"currentPage\":1," +
-                    "\"pageSize\":80,\"entries\":[{\"macAddress\":\"01:02:03:04:05:06\"," +
-                    "\"currentlyTracked\":true,\"confidenceFactor\":10.0," +
-                    "\"ipAddress\":[\"01.02.03.456\"],\"ssId\":\"test\",\"band\":" +
-                    "\"UNKNOWN\",\"apMacAddress\":\"0a:0b:0c:0d:0e:0f\"," +
-                    "\"isGuestUser\":false,\"dot11Status\":\"ASSOCIATED\",\"MapInfo" +
-                    "\":{\"mapHierarchyString\":\"DevNetCampus>DevNetBuilding>DevNetZone" +
-                    "\",\"floorRefId\":723413320329068590,\"Dimension\":{\"length" +
-                    "\":81.9,\"width\":307.0,\"height\":16.5,\"offsetX\":0.0,\"" +
-                    "offsetY\":0.0,\"unit\":\"FEET\"}},\"MapCoordinate\":{\"x\"" +
-                    ":194.47,\"y\":51.8,\"unit\":\"FEET\"},\"Statistics\":{\"" +
-                    "currentServerTime\":\"2016-03-07T09:17:48.631+0000\",\"" +
-                    "firstLocatedTime\":\"2016-02-04T23:44:29.634+0000\",\"" +
-                    "lastLocatedTime\":\"2016-03-07T09:18:18.121+0000\",\"" +
-                    "additionalProperties\":{}},\"additionalProperties\":{}}]}}",
-            clientDesc = "{\"WirelessClientLocation\":{\"macAddress\":\"" +
-                    "00:00:2a:01:00:0a\",\"currentlyTracked\":true,\"confidenceFactor" +
-                    "\":56.0,\"ipAddress\":[\"10.10.20.169\"],\"ssId\":\"test\",\"band" +
-                    "\":\"UNKNOWN\",\"apMacAddress\":\"00:2b:01:00:03:00\",\"isGuestUser" +
-                    "\":false,\"dot11Status\":\"ASSOCIATED\",\"MapInfo\":{\"" +
-                    "mapHierarchyString\":\"DevNetCampus>DevNetBuilding>DevNetZone\",\"" +
-                    "floorRefId\":723413320329068590,\"Dimension\":{\"length\":81.9,\"" +
-                    "width\":307.0,\"height\":16.5,\"offsetX\":0.0,\"offsetY\":0.0,\"" +
-                    "unit\":\"FEET\"}},\"MapCoordinate\":{\"x\":120.43,\"y\":40.03,\"unit" +
-                    "\":\"FEET\"},\"Statistics\":{\"currentServerTime\":\"" +
-                    "2016-03-09T11:12:15.259+0000\",\"firstLocatedTime\":\"" +
-                    "2016-02-04T23:44:29.635+0000\",\"lastLocatedTime\":\"" +
-                    "2016-03-09T11:12:09.963+0000\"}}}";
+            wirelessCLientLocationDesc = "{\"macAddress\":\"1c:4b:d6:a7:3a:86\"," +
+            "\"currentlyTracked\":true,\"confidenceFactor\":96.0," +
+            "\"ipAddress\":[\"172.28.146.171\",\"fe80:0000:0000:0000:8435:38c3:2098:0a41\"]," +
+            "\"userName\":\"mmures14@student.aau.dk\",\"ssId\":\"AAU-1x\"," +
+            "\"band\":\"UNKNOWN\",\"apMacAddress\":\"6c:9c:ed:ec:5d:a0\"," +
+            "\"isGuestUser\":false,\"dot11Status\":\"ASSOCIATED\"," +
+            "\"MapInfo\":{\"mapHierarchyString\":\"Sohngaardsholmsvej>SGV57L>Stueplan\"," +
+            "\"floorRefId\":-6045715975825784107,\"Dimension\":{\"length\":377.8," +
+            "\"width\":155.5,\"height\":10.0,\"offsetX\":0.0,\"offsetY\":0.0," +
+            "\"unit\":\"FEET\"},\"Image\":{\"imageName\":\"domain_0_1280490386919.png\"}}," +
+            "\"MapCoordinate\":{\"x\":83.74,\"y\":329.13,\"unit\":\"FEET\"}," +
+            "\"Statistics\":{\"currentServerTime\":\"2016-03-30T14:36:02.630+0200\"," +
+            "\"firstLocatedTime\":\"2016-03-30T09:35:30.308+0200\"," +
+            "\"lastLocatedTime\":\"2016-03-30T14:34:58.988+0200\"}," +
+            "\"GeoCoordinate\":{\"latitude\":57.0273061896,\"longitude\":9.9472380576," +
+            "\"unit\":\"DEGREES\"}}",
+            allClientDesc = "{\"Locations\":{\"totalPages\":1,\"currentPage\":1,\"pageSize\":80," +
+                    "\"entries\":[{\"macAddress\":\"1c:4b:d6:a7:3a:86\",\"currentlyTracked\":true," +
+                    "\"confidenceFactor\":96.0,\"ipAddress\":[\"172.28.146.171\"," +
+                    "\"fe80:0000:0000:0000:8435:38c3:2098:0a41\"],\"userName\":" +
+                    "\"mmures14@student.aau.dk\",\"ssId\":\"AAU-1x\",\"band\":\"UNKNOWN\"," +
+                    "\"apMacAddress\":\"6c:9c:ed:ec:5d:a0\",\"isGuestUser\":false," +
+                    "\"dot11Status\":\"ASSOCIATED\",\"MapInfo\":{\"mapHierarchyString\"" +
+                    ":\"Sohngaardsholmsvej>SGV57L>Stueplan\",\"floorRefId\":-6045715975825784107," +
+                    "\"Dimension\":{\"length\":377.8,\"width\":155.5,\"height\":10.0,\"offsetX\":0.0," +
+                    "\"offsetY\":0.0,\"unit\":\"FEET\"},\"Image\":" +
+                    "{\"imageName\":\"domain_0_1280490386919.png\"}},\"MapCoordinate\":{\"x\":83.74," +
+                    "\"y\":329.13,\"unit\":\"FEET\"},\"Statistics\":{\"currentServerTime\":" +
+                    "\"2016-03-30T14:36:02.630+0200\",\"firstLocatedTime\"" +
+                    ":\"2016-03-30T09:35:30.308+0200\",\"lastLocatedTime\"" +
+                    ":\"2016-03-30T14:34:58.988+0200\"},\"GeoCoordinate\":{\"latitude\":57.0273061896," +
+                    "\"longitude\":9.9472380576,\"unit\":\"DEGREES\"}}]}}",
+            clientDesc = "{\"WirelessClientLocation\":{\"macAddress\":\"1c:4b:d6:a7:3a:86\"," +
+                    "\"currentlyTracked\":true,\"confidenceFactor\":96.0," +
+                    "\"ipAddress\":[\"172.28.146.171\",\"fe80:0000:0000:0000:8435:38c3:2098:0a41\"]," +
+                    "\"userName\":\"mmures14@student.aau.dk\",\"ssId\":\"AAU-1x\"," +
+                    "\"band\":\"UNKNOWN\",\"apMacAddress\":\"6c:9c:ed:ec:5d:a0\"," +
+                    "\"isGuestUser\":false,\"dot11Status\":\"ASSOCIATED\"," +
+                    "\"MapInfo\":{\"mapHierarchyString\":\"Sohngaardsholmsvej>SGV57L>Stueplan\"," +
+                    "\"floorRefId\":-6045715975825784107,\"Dimension\":{\"length\":377.8," +
+                    "\"width\":155.5,\"height\":10.0,\"offsetX\":0.0,\"offsetY\":0.0," +
+                    "\"unit\":\"FEET\"},\"Image\":{\"imageName\":\"domain_0_1280490386919.png\"}}," +
+                    "\"MapCoordinate\":{\"x\":83.74,\"y\":329.13,\"unit\":\"FEET\"}," +
+                    "\"Statistics\":{\"currentServerTime\":\"2016-03-30T14:36:02.630+0200\"," +
+                    "\"firstLocatedTime\":\"2016-03-30T09:35:30.308+0200\"," +
+                    "\"lastLocatedTime\":\"2016-03-30T14:34:58.988+0200\"}," +
+                    "\"GeoCoordinate\":{\"latitude\":57.0273061896,\"longitude\":9.9472380576," +
+                    "\"unit\":\"DEGREES\"}}}";
 
     @BeforeClass
     static public void setUp() throws Exception {
@@ -155,7 +160,7 @@ public class staticMethodsTest {
     public void testReadJsonToWirelessClientLocation() throws Exception {
         WirelessClientLocation premadeClient =
                 ReadJsonToWirelessClientLocation(wirelessCLientLocationDesc);
-        assertEquals("Testing 'ReadJsonToClient' MacAddress", "01:02:03:04:05:06",
+        assertEquals("Testing 'ReadJsonToClient' MacAddress", "1c:4b:d6:a7:3a:86",
                 premadeClient.getMacAddress());
     }
 
@@ -164,7 +169,7 @@ public class staticMethodsTest {
         AllClient premadeAllClient = ReadJsonToClientList(allClientDesc);
 
         // This test compares an Entry value (MacAddress)
-        assertEquals("Testing 'ReadJsonToClient' MacAddress", "01:02:03:04:05:06",
+        assertEquals("Testing 'ReadJsonToClient' MacAddress", "1c:4b:d6:a7:3a:86",
                 premadeAllClient.getLocations().getEntries().get(0).getMacAddress());
         // This test compares a location value (TotalPages)
         assertEquals("Testing 'ReadJsonToClient' TotalPages", 1,
@@ -175,7 +180,7 @@ public class staticMethodsTest {
     public void testReadJsonToClient() throws Exception {
         Client premadeCLient1 = ReadJsonToClient(clientDesc);
         assertEquals("Testing 'ReadJsonToClient'",
-                "00:00:2a:01:00:0a",
+                "1c:4b:d6:a7:3a:86",
                 premadeCLient1.getWirelessClientLocation().getMacAddress());
     }
 
@@ -220,7 +225,7 @@ public class staticMethodsTest {
         httpClient = ReadJsonToClient(description);
         assertEquals("Testing 'CollectSingleClient'",
                 httpClient.getWirelessClientLocation().getApMacAddress(),
-                "00:2b:01:00:03:00");
+                "6c:9c:ed:ec:5d:a0");
     }
 
     @Test
@@ -228,7 +233,7 @@ public class staticMethodsTest {
         String description = CollectAllClients("test", "works", "http://127.0.0.1:8080");
         httpAllClient = ReadJsonToClientList(description);
         assertEquals("Testing 'CollectAllClients'", httpAllClient.getLocations().getEntries().get(0)
-                .getApMacAddress(), "0a:0b:0c:0d:0e:0f");
+                .getApMacAddress(), "6c:9c:ed:ec:5d:a0");
     }
 
     @Test

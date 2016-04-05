@@ -1,17 +1,41 @@
 
 package AllClient;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 @Generated("org.jsonschema2pojo")
 public class Statistics {
 
+    @SerializedName("currentServerTime")
+    @Expose
     private String currentServerTime;
+    @SerializedName("firstLocatedTime")
+    @Expose
     private String firstLocatedTime;
+    @SerializedName("lastLocatedTime")
+    @Expose
     private String lastLocatedTime;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
+    /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Statistics() {
+    }
+
+    /**
+     * 
+     * @param firstLocatedTime
+     * @param lastLocatedTime
+     * @param currentServerTime
+     */
+    public Statistics(String currentServerTime, String firstLocatedTime, String lastLocatedTime) {
+        this.currentServerTime = currentServerTime;
+        this.firstLocatedTime = firstLocatedTime;
+        this.lastLocatedTime = lastLocatedTime;
+    }
 
     /**
      * 
@@ -65,14 +89,6 @@ public class Statistics {
      */
     public void setLastLocatedTime(String lastLocatedTime) {
         this.lastLocatedTime = lastLocatedTime;
-    }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }

@@ -6,14 +6,14 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("org.jsonschema2pojo")
-public class MapCoordinate {
+public class GeoCoordinate {
 
-    @SerializedName("x")
+    @SerializedName("latitude")
     @Expose
-    private Float x;
-    @SerializedName("y")
+    private Float latitude;
+    @SerializedName("longitude")
     @Expose
-    private Float y;
+    private Float longitude;
     @SerializedName("unit")
     @Expose
     private String unit;
@@ -22,55 +22,55 @@ public class MapCoordinate {
      * No args constructor for use in serialization
      * 
      */
-    public MapCoordinate() {
+    public GeoCoordinate() {
     }
 
     /**
      * 
      * @param unit
-     * @param y
-     * @param x
+     * @param longitude
+     * @param latitude
      */
-    public MapCoordinate(Float x, Float y, String unit) {
-        this.x = x;
-        this.y = y;
+    public GeoCoordinate(Float latitude, Float longitude, String unit) {
+        this.latitude = latitude;
+        this.longitude = longitude;
         this.unit = unit;
     }
 
     /**
      * 
      * @return
-     *     The x
+     *     The latitude
      */
-    public Float getX() {
-        return x;
+    public Float getLatitude() {
+        return latitude;
     }
 
     /**
      * 
-     * @param x
-     *     The x
+     * @param latitude
+     *     The latitude
      */
-    public void setX(Float x) {
-        this.x = x;
+    public void setLatitude(Float latitude) {
+        this.latitude = latitude;
     }
 
     /**
      * 
      * @return
-     *     The y
+     *     The longitude
      */
-    public Float getY() {
-        return y;
+    public Float getLongitude() {
+        return longitude;
     }
 
     /**
      * 
-     * @param y
-     *     The y
+     * @param longitude
+     *     The longitude
      */
-    public void setY(Float y) {
-        this.y = y;
+    public void setLongitude(Float longitude) {
+        this.longitude = longitude;
     }
 
     /**

@@ -1,5 +1,5 @@
 
-package AllClient;
+package Client;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("org.jsonschema2pojo")
-public class Entry {
+public class WirelessClientLocation {
 
     @SerializedName("macAddress")
     @Expose
@@ -54,47 +54,6 @@ public class Entry {
     private GeoCoordinate GeoCoordinate;
 
     /**
-     * No args constructor for use in serialization
-     * 
-     */
-    public Entry() {
-    }
-
-    /**
-     * 
-     * @param Statistics
-     * @param GeoCoordinate
-     * @param confidenceFactor
-     * @param apMacAddress
-     * @param macAddress
-     * @param MapInfo
-     * @param ssId
-     * @param band
-     * @param isGuestUser
-     * @param MapCoordinate
-     * @param currentlyTracked
-     * @param dot11Status
-     * @param userName
-     * @param ipAddress
-     */
-    public Entry(String macAddress, Boolean currentlyTracked, Float confidenceFactor, List<String> ipAddress, String userName, String ssId, String band, String apMacAddress, Boolean isGuestUser, String dot11Status, MapInfo MapInfo, MapCoordinate MapCoordinate, Statistics Statistics, GeoCoordinate GeoCoordinate) {
-        this.macAddress = macAddress;
-        this.currentlyTracked = currentlyTracked;
-        this.confidenceFactor = confidenceFactor;
-        this.ipAddress = ipAddress;
-        this.userName = userName;
-        this.ssId = ssId;
-        this.band = band;
-        this.apMacAddress = apMacAddress;
-        this.isGuestUser = isGuestUser;
-        this.dot11Status = dot11Status;
-        this.MapInfo = MapInfo;
-        this.MapCoordinate = MapCoordinate;
-        this.Statistics = Statistics;
-        this.GeoCoordinate = GeoCoordinate;
-    }
-
-    /**
      * 
      * @return
      *     The macAddress
@@ -110,6 +69,11 @@ public class Entry {
      */
     public void setMacAddress(String macAddress) {
         this.macAddress = macAddress;
+    }
+
+    public WirelessClientLocation withMacAddress(String macAddress) {
+        this.macAddress = macAddress;
+        return this;
     }
 
     /**
@@ -130,6 +94,11 @@ public class Entry {
         this.currentlyTracked = currentlyTracked;
     }
 
+    public WirelessClientLocation withCurrentlyTracked(Boolean currentlyTracked) {
+        this.currentlyTracked = currentlyTracked;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -146,6 +115,11 @@ public class Entry {
      */
     public void setConfidenceFactor(Float confidenceFactor) {
         this.confidenceFactor = confidenceFactor;
+    }
+
+    public WirelessClientLocation withConfidenceFactor(Float confidenceFactor) {
+        this.confidenceFactor = confidenceFactor;
+        return this;
     }
 
     /**
@@ -166,6 +140,11 @@ public class Entry {
         this.ipAddress = ipAddress;
     }
 
+    public WirelessClientLocation withIpAddress(List<String> ipAddress) {
+        this.ipAddress = ipAddress;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -182,6 +161,11 @@ public class Entry {
      */
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public WirelessClientLocation withUserName(String userName) {
+        this.userName = userName;
+        return this;
     }
 
     /**
@@ -202,6 +186,11 @@ public class Entry {
         this.ssId = ssId;
     }
 
+    public WirelessClientLocation withSsId(String ssId) {
+        this.ssId = ssId;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -218,6 +207,11 @@ public class Entry {
      */
     public void setBand(String band) {
         this.band = band;
+    }
+
+    public WirelessClientLocation withBand(String band) {
+        this.band = band;
+        return this;
     }
 
     /**
@@ -238,6 +232,11 @@ public class Entry {
         this.apMacAddress = apMacAddress;
     }
 
+    public WirelessClientLocation withApMacAddress(String apMacAddress) {
+        this.apMacAddress = apMacAddress;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -254,6 +253,11 @@ public class Entry {
      */
     public void setIsGuestUser(Boolean isGuestUser) {
         this.isGuestUser = isGuestUser;
+    }
+
+    public WirelessClientLocation withIsGuestUser(Boolean isGuestUser) {
+        this.isGuestUser = isGuestUser;
+        return this;
     }
 
     /**
@@ -274,6 +278,11 @@ public class Entry {
         this.dot11Status = dot11Status;
     }
 
+    public WirelessClientLocation withDot11Status(String dot11Status) {
+        this.dot11Status = dot11Status;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -290,6 +299,11 @@ public class Entry {
      */
     public void setMapInfo(MapInfo MapInfo) {
         this.MapInfo = MapInfo;
+    }
+
+    public WirelessClientLocation withMapInfo(MapInfo MapInfo) {
+        this.MapInfo = MapInfo;
+        return this;
     }
 
     /**
@@ -310,6 +324,11 @@ public class Entry {
         this.MapCoordinate = MapCoordinate;
     }
 
+    public WirelessClientLocation withMapCoordinate(MapCoordinate MapCoordinate) {
+        this.MapCoordinate = MapCoordinate;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -328,6 +347,11 @@ public class Entry {
         this.Statistics = Statistics;
     }
 
+    public WirelessClientLocation withStatistics(Statistics Statistics) {
+        this.Statistics = Statistics;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -344,6 +368,11 @@ public class Entry {
      */
     public void setGeoCoordinate(GeoCoordinate GeoCoordinate) {
         this.GeoCoordinate = GeoCoordinate;
+    }
+
+    public WirelessClientLocation withGeoCoordinate(GeoCoordinate GeoCoordinate) {
+        this.GeoCoordinate = GeoCoordinate;
+        return this;
     }
 
 }

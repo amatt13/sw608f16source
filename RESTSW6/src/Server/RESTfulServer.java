@@ -1,27 +1,16 @@
 package Server;
-import AllClient.AllClient;
-import AllClient.Entry;
 import CertificateHandler.CertificateHandler;
-import SingleClient.Client;
-import SingleClient.WirelessClientLocation;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.sun.net.httpserver.Headers;
-import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;
 import diff_match_patchpack.diff_match_patch;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.net.*;
+import java.net.Inet4Address;
+import java.net.InetSocketAddress;
+import java.net.UnknownHostException;
 import java.nio.charset.Charset;
-import java.util.Base64;
 import java.util.LinkedList;
 import java.util.TreeSet;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import static staticMethods.staticMethods.*;
 

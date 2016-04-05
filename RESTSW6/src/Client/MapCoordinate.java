@@ -1,5 +1,5 @@
 
-package AllClient;
+package Client;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
@@ -19,25 +19,6 @@ public class MapCoordinate {
     private String unit;
 
     /**
-     * No args constructor for use in serialization
-     * 
-     */
-    public MapCoordinate() {
-    }
-
-    /**
-     * 
-     * @param unit
-     * @param y
-     * @param x
-     */
-    public MapCoordinate(Float x, Float y, String unit) {
-        this.x = x;
-        this.y = y;
-        this.unit = unit;
-    }
-
-    /**
      * 
      * @return
      *     The x
@@ -53,6 +34,11 @@ public class MapCoordinate {
      */
     public void setX(Float x) {
         this.x = x;
+    }
+
+    public MapCoordinate withX(Float x) {
+        this.x = x;
+        return this;
     }
 
     /**
@@ -73,6 +59,11 @@ public class MapCoordinate {
         this.y = y;
     }
 
+    public MapCoordinate withY(Float y) {
+        this.y = y;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -89,6 +80,11 @@ public class MapCoordinate {
      */
     public void setUnit(String unit) {
         this.unit = unit;
+    }
+
+    public MapCoordinate withUnit(String unit) {
+        this.unit = unit;
+        return this;
     }
 
 }
