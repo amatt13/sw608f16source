@@ -1,17 +1,22 @@
 
-package SingleClient;
+package Client;
 
-import java.util.HashMap;
-import java.util.Map;
 import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 @Generated("org.jsonschema2pojo")
 public class Statistics {
 
+    @SerializedName("currentServerTime")
+    @Expose
     private String currentServerTime;
+    @SerializedName("firstLocatedTime")
+    @Expose
     private String firstLocatedTime;
+    @SerializedName("lastLocatedTime")
+    @Expose
     private String lastLocatedTime;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * 
@@ -29,6 +34,11 @@ public class Statistics {
      */
     public void setCurrentServerTime(String currentServerTime) {
         this.currentServerTime = currentServerTime;
+    }
+
+    public Statistics withCurrentServerTime(String currentServerTime) {
+        this.currentServerTime = currentServerTime;
+        return this;
     }
 
     /**
@@ -49,6 +59,11 @@ public class Statistics {
         this.firstLocatedTime = firstLocatedTime;
     }
 
+    public Statistics withFirstLocatedTime(String firstLocatedTime) {
+        this.firstLocatedTime = firstLocatedTime;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -67,12 +82,9 @@ public class Statistics {
         this.lastLocatedTime = lastLocatedTime;
     }
 
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
+    public Statistics withLastLocatedTime(String lastLocatedTime) {
+        this.lastLocatedTime = lastLocatedTime;
+        return this;
     }
 
 }

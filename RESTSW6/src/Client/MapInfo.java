@@ -1,5 +1,5 @@
 
-package AllClient;
+package Client;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
@@ -22,27 +22,6 @@ public class MapInfo {
     private Image Image;
 
     /**
-     * No args constructor for use in serialization
-     * 
-     */
-    public MapInfo() {
-    }
-
-    /**
-     * 
-     * @param mapHierarchyString
-     * @param Image
-     * @param floorRefId
-     * @param Dimension
-     */
-    public MapInfo(String mapHierarchyString, String floorRefId, Dimension Dimension, Image Image) {
-        this.mapHierarchyString = mapHierarchyString;
-        this.floorRefId = floorRefId;
-        this.Dimension = Dimension;
-        this.Image = Image;
-    }
-
-    /**
      * 
      * @return
      *     The mapHierarchyString
@@ -58,6 +37,11 @@ public class MapInfo {
      */
     public void setMapHierarchyString(String mapHierarchyString) {
         this.mapHierarchyString = mapHierarchyString;
+    }
+
+    public MapInfo withMapHierarchyString(String mapHierarchyString) {
+        this.mapHierarchyString = mapHierarchyString;
+        return this;
     }
 
     /**
@@ -78,6 +62,11 @@ public class MapInfo {
         this.floorRefId = floorRefId;
     }
 
+    public MapInfo withFloorRefId(String floorRefId) {
+        this.floorRefId = floorRefId;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -96,6 +85,11 @@ public class MapInfo {
         this.Dimension = Dimension;
     }
 
+    public MapInfo withDimension(Dimension Dimension) {
+        this.Dimension = Dimension;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -112,6 +106,11 @@ public class MapInfo {
      */
     public void setImage(Image Image) {
         this.Image = Image;
+    }
+
+    public MapInfo withImage(Image Image) {
+        this.Image = Image;
+        return this;
     }
 
 }

@@ -1,5 +1,5 @@
 
-package AllClient;
+package Client;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
@@ -28,31 +28,6 @@ public class Dimension {
     private String unit;
 
     /**
-     * No args constructor for use in serialization
-     * 
-     */
-    public Dimension() {
-    }
-
-    /**
-     * 
-     * @param unit
-     * @param height
-     * @param offsetY
-     * @param offsetX
-     * @param width
-     * @param length
-     */
-    public Dimension(Float length, Float width, Float height, Float offsetX, Float offsetY, String unit) {
-        this.length = length;
-        this.width = width;
-        this.height = height;
-        this.offsetX = offsetX;
-        this.offsetY = offsetY;
-        this.unit = unit;
-    }
-
-    /**
      * 
      * @return
      *     The length
@@ -68,6 +43,11 @@ public class Dimension {
      */
     public void setLength(Float length) {
         this.length = length;
+    }
+
+    public Dimension withLength(Float length) {
+        this.length = length;
+        return this;
     }
 
     /**
@@ -88,6 +68,11 @@ public class Dimension {
         this.width = width;
     }
 
+    public Dimension withWidth(Float width) {
+        this.width = width;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -104,6 +89,11 @@ public class Dimension {
      */
     public void setHeight(Float height) {
         this.height = height;
+    }
+
+    public Dimension withHeight(Float height) {
+        this.height = height;
+        return this;
     }
 
     /**
@@ -124,6 +114,11 @@ public class Dimension {
         this.offsetX = offsetX;
     }
 
+    public Dimension withOffsetX(Float offsetX) {
+        this.offsetX = offsetX;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -142,6 +137,11 @@ public class Dimension {
         this.offsetY = offsetY;
     }
 
+    public Dimension withOffsetY(Float offsetY) {
+        this.offsetY = offsetY;
+        return this;
+    }
+
     /**
      * 
      * @return
@@ -158,6 +158,11 @@ public class Dimension {
      */
     public void setUnit(String unit) {
         this.unit = unit;
+    }
+
+    public Dimension withUnit(String unit) {
+        this.unit = unit;
+        return this;
     }
 
 }

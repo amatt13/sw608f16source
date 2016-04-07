@@ -2,64 +2,118 @@
 package AllClient;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import javax.annotation.Generated;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 @Generated("org.jsonschema2pojo")
-
-/**See {@link SingleClient.ClientList} as those are alike */
 public class Locations {
 
-    /**Total amount of pages */
+    @SerializedName("totalPages")
+    @Expose
     private Integer totalPages;
-    /**What is the active page*/
+    @SerializedName("currentPage")
+    @Expose
     private Integer currentPage;
-    /**Amount of enteries per page*/
+    @SerializedName("pageSize")
+    @Expose
     private Integer pageSize;
-    /**All the data*/
-    protected List<Entry> entries = new ArrayList<Entry>();
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    @SerializedName("entries")
+    @Expose
+    private List<Entry> entries = new ArrayList<Entry>();
 
+    /**
+     * No args constructor for use in serialization
+     * 
+     */
+    public Locations() {
+    }
+
+    /**
+     * 
+     * @param pageSize
+     * @param entries
+     * @param currentPage
+     * @param totalPages
+     */
+    public Locations(Integer totalPages, Integer currentPage, Integer pageSize, List<Entry> entries) {
+        this.totalPages = totalPages;
+        this.currentPage = currentPage;
+        this.pageSize = pageSize;
+        this.entries = entries;
+    }
+
+    /**
+     * 
+     * @return
+     *     The totalPages
+     */
     public Integer getTotalPages() {
         return totalPages;
     }
 
+    /**
+     * 
+     * @param totalPages
+     *     The totalPages
+     */
     public void setTotalPages(Integer totalPages) {
         this.totalPages = totalPages;
     }
 
+    /**
+     * 
+     * @return
+     *     The currentPage
+     */
     public Integer getCurrentPage() {
         return currentPage;
     }
 
+    /**
+     * 
+     * @param currentPage
+     *     The currentPage
+     */
     public void setCurrentPage(Integer currentPage) {
         this.currentPage = currentPage;
     }
 
+    /**
+     * 
+     * @return
+     *     The pageSize
+     */
     public Integer getPageSize() {
         return pageSize;
     }
 
+    /**
+     * 
+     * @param pageSize
+     *     The pageSize
+     */
     public void setPageSize(Integer pageSize) {
         this.pageSize = pageSize;
     }
 
+    /**
+     * 
+     * @return
+     *     The entries
+     */
     public List<Entry> getEntries() {
         return entries;
     }
 
+    /**
+     * 
+     * @param entries
+     *     The entries
+     */
     public void setEntries(List<Entry> entries) {
         this.entries = entries;
-    }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
 }
