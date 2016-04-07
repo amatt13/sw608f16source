@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="staticMethods">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/staticMethods.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar://$PROJECT_DIR$/lib/staticMethods.jar!/" recursive="false" />
+  </library>
+</component>

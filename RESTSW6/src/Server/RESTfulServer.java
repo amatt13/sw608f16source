@@ -16,7 +16,6 @@ import java.util.regex.Pattern;
 import CertificateHandler.*;
 import AllClient.*;
 import SingleClient.*;
-
 import diff_match_patchpack.diff_match_patch;
 
 /**
@@ -44,6 +43,7 @@ public class RESTfulServer {
         }
     }
 
+
     protected static TreeSet<String> watchList = new TreeSet<String>();
 
     public static void main(String[] args) throws IOException {
@@ -64,7 +64,6 @@ public class RESTfulServer {
                 return;
             }
         }*/
-
             HttpServer server = HttpServer.create(new InetSocketAddress(myIp, port), SizeofConnectionQueue);
 
             // To add support for another CISCO MSE API call, add another context with the server.createContext() call.
@@ -119,8 +118,6 @@ public class RESTfulServer {
                 LinkedList<diff_match_patch.Diff> diffLinkedList = diff.diff_main(httpExchange.getRequestURI().getPath(),
                         httpExchange.getHttpContext().getPath());
                 System.out.println(diffLinkedList.peekLast().text);
-
-
                 String response = "Added " + diffLinkedList.peekLast().text + " to watchlist.\n Go to " +
                         server.getAddress() + "/api/watchlist/remove/" +
                         diffLinkedList.peekLast().text + " to remove from watchlist.";
@@ -131,7 +128,6 @@ public class RESTfulServer {
                 os.write(response.getBytes(Charset.forName("UTF-8")));
                 os.close();
             });
-
             // Removes a mac address from the watchlist. After this it will be obfuscated.
             server.createContext("/api/watchlist/remove/", httpExchange -> {
                 if (!VerifyConnection(httpExchange)) {
