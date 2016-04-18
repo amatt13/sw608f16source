@@ -1,6 +1,8 @@
 package staticMethods;
 
 import Client.*;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.sun.net.httpserver.HttpServer;
 import AllClient.*;
 import org.junit.AfterClass;
@@ -26,11 +28,10 @@ public class staticMethodsTest {
     static List<Entry> smallClientList = new ArrayList<Entry>();
     static Entry entry = new Entry();
     static Client client = new Client();
-    static Client httpClient = new Client();
+    static Client singleClient = new Client();
     static WirelessClientLocation wirelessClientLocation = new WirelessClientLocation();
     static Locations location = new Locations();
     static AllClient allClient = new AllClient();
-    static AllClient httpAllClient = new AllClient();
     static HttpServer localServer;
     static String address,
             localIP,
@@ -221,18 +222,27 @@ public class staticMethodsTest {
 
     @Test
     public void testCollectSingleClient() throws Exception {
-        String description = CollectSingleClient("test", "works", "12.34.56.789", "http://127.0.0.1:8080");
-        httpClient = ReadJsonToClient(description);
+        String description = CollectSingleClient("test", "works", "12.34.56.789",
+                "http://127.0.0.1:8080");
+        singleClient = ReadJsonToClient(description);
         assertEquals("Testing 'CollectSingleClient'",
-                httpClient.getWirelessClientLocation().getApMacAddress(),
+                singleClient.getWirelessClientLocation().getApMacAddress(),
                 "6c:9c:ed:ec:5d:a0");
+
+        Gson gson = new GsonBuilder().create();
+        String json = gson.toJson(singleClient);
+
+        assertEquals("Testing 'CollectSingleClient' See if the class " +
+                "will be converted into the starting string'"
+                , description,
+                json);
     }
 
     @Test
     public void testCollectAllClients() throws Exception {
         String description = CollectAllClients("test", "works", "http://127.0.0.1:8080");
-        httpAllClient = ReadJsonToClientList(description);
-        assertEquals("Testing 'CollectAllClients'", httpAllClient.getLocations().getEntries().get(0)
+        allClient = ReadJsonToClientList(description);
+        assertEquals("Testing 'CollectAllClients'", allClient.getLocations().getEntries().get(0)
                 .getApMacAddress(), "6c:9c:ed:ec:5d:a0");
     }
 
