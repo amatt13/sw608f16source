@@ -129,13 +129,13 @@ public class staticMethodsTest {
 
     @Test
     public void testObfuscateMacAddress() throws Exception {
-        assertEquals("Testing 'ObfuscateMacAddress' with AllClient",
-                "12:34:56", ObfuscateMacAddress(allClient)
+        assertEquals("Testing 'Obfuscate' with AllClient",
+                "12:34:56", Obfuscate(allClient)
                         .getLocations().getEntries().get(0).getMacAddress());
-        assertEquals("Testing 'ObfuscateMacAddress' with SingleClient",
-                "12:34:56", ObfuscateMacAddress(client)
+        assertEquals("Testing 'Obfuscate' with SingleClient",
+                "12:34:56", Obfuscate(client)
                         .getWirelessClientLocation().getMacAddress());
-        assertEquals("Testing 'ObfuscateMacAddress' with no input",
+        assertEquals("Testing 'Obfuscate' with no input",
                 "", "");
     }
 
@@ -194,7 +194,7 @@ public class staticMethodsTest {
 
     @Test
     public void testObfuscateEmail() throws Exception {
-        //assertEquals("Testing 'ObfuscateMacAddress'", "anonymous OR null", RESTfulServer.ObfuscateEmail());
+        //assertEquals("Testing 'Obfuscate'", "anonymous OR null", RESTfulServer.ObfuscateEmail());
         // The actual method has not been implemented yet
     }
 

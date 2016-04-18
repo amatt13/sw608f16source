@@ -31,24 +31,6 @@ public class staticMethods {
     public static TreeSet<String> watchList = new TreeSet<String>();
 
     /**
-     * Method to make all MAC-Addresses unrecognizable
-     * @param allList takes in all the data
-     * @return half the MAC-Address
-     */
-    public static AllClient ObfuscateMacAddress(AllClient allList) {
-
-        for (Entry item : allList.getLocations().getEntries()) {
-            String oldMacAddress = item.getMacAddress();
-
-            if (watchList.contains(oldMacAddress)) {
-                continue;
-            }
-            item.setMacAddress(oldMacAddress.substring(0, oldMacAddress.length() / 2));
-        }
-        return allList;
-    }
-
-    /**
      * Method to test connection
      * @param httpExchange  All the information about connection, user ip, request, server ip
      * @return true if valid login and false if not
@@ -92,22 +74,40 @@ public class staticMethods {
             os.close();
             return false;
         }
-        // TODO test IP address!
         return true;
     }
 
     /**
-     * Method to hide MAC-Address of the single user you are looking for
-     * @param singleClient Gets the one users info and halfs the MAC-Address
+     * Method to hide sensitive info of the single user you are looking for
+     * @param singleClient contains the data for the user
      * @return the updated info for the chosen user
      */
-    public static Client ObfuscateMacAddress(Client singleClient) {
+    public static Client Obfuscate(Client singleClient) {
         String oldMacAddress = singleClient.getWirelessClientLocation().getMacAddress();
         if (!watchList.contains(oldMacAddress)) {
-            singleClient.getWirelessClientLocation().setMacAddress(oldMacAddress.
-                    substring(0, oldMacAddress.length() / 2));
+            singleClient.getWirelessClientLocation().setMacAddress("OBFUSCATED");
+            singleClient.getWirelessClientLocation().setUserName("OBFUSCATED");
         }
         return singleClient;
+    }
+
+    /**
+     * Method to make all sensitive information unrecognizable
+     * @param allList takes in all the data
+     * @return the modified AllClient instance with sensitive information replaced
+     */
+    public static AllClient Obfuscate(AllClient allList) {
+
+        for (Entry item : allList.getLocations().getEntries()) {
+            String oldMacAddress = item.getMacAddress();
+
+            if (watchList.contains(oldMacAddress)) {
+                continue;
+            }
+            item.setMacAddress("OBFUSCATED");
+            item.setUserName("OBFUSCATED");
+        }
+        return allList;
     }
 
     /**
@@ -166,10 +166,6 @@ public class staticMethods {
         return gson.toJson(classOfT);
     }
 
-    public static void ObfuscateEmail(){
-        // TODO IMPLEMENT THIS!
-    }
-
     /**
      * Method that adds the MAC-Address to the list of known MAC-Addresses
      * @param macaddress It takes in a MAC-Address
@@ -208,8 +204,12 @@ public class staticMethods {
      */
     public static String CollectSingleClient(String username, String password, String userID, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients/" + userID, username, password);
+        if(requestresult == null){
+            System.out.println("Invalid user.");
+            throw new IOException();
+        }
         Client client = ReadJsonToClient(requestresult);
-        client = ObfuscateMacAddress(client);
+        client = Obfuscate(client);
         return ConvertToJson(client);
     }
 
@@ -226,7 +226,7 @@ public class staticMethods {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients",
                 username, password);
         AllClient allClient = ReadJsonToClientList(requestresult);
-        allClient = ObfuscateMacAddress(allClient);
+        allClient = Obfuscate(allClient);
         return ConvertToJson(allClient);
     }
 
