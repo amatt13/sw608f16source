@@ -26,7 +26,7 @@ public class RESTfulServer {
     private static String username; /** username */
     private static String password; /**password */
 
-    protected static final int port = 8080;
+    protected static final int port = 8090;
     protected static final int SizeofConnectionQueue = 1;
 
     // Gets the host address. Might cause trouble if several or no addresses returned.
