@@ -234,8 +234,7 @@ public class staticMethodsTest {
 
         assertEquals("Testing 'CollectSingleClient' See if the class " +
                 "will be converted into the starting string'"
-                , description,
-                json);
+                , description, json);
     }
 
     @Test
@@ -244,6 +243,13 @@ public class staticMethodsTest {
         allClient = ReadJsonToClientList(description);
         assertEquals("Testing 'CollectAllClients'", allClient.getLocations().getEntries().get(0)
                 .getApMacAddress(), "6c:9c:ed:ec:5d:a0");
+
+        Gson gson = new GsonBuilder().create();
+        String json = gson.toJson(allClient);
+
+        assertEquals("Testing 'CollectSingleClient' See if the class " +
+                        "will be converted into the starting string'"
+                , description, json);
     }
 
     @Test
