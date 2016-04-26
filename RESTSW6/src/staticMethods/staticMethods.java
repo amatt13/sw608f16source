@@ -222,6 +222,13 @@ public class staticMethods {
      * @return the collected data in Json form
      * @throws IOException throws exception from GetHttp() if response code is not 200
      */
+    public static String CollectAllClients(String username, String password, String ip, String page, String pageSize) throws IOException {
+        String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients",
+                username, password, page, pageSize);
+        AllClient allClient = ReadJsonToClientList(requestresult);
+        allClient = Obfuscate(allClient);
+        return ConvertToJson(allClient);
+    }
     public static String CollectAllClients(String username, String password, String ip) throws IOException {
         String requestresult = httpGet(ip + "/api/contextaware/v1/location/clients",
                 username, password);
@@ -248,13 +255,14 @@ public class staticMethods {
         //Request headers
         conn.setRequestProperty("Authorization", Authentication(userName, userPW));
         conn.setRequestProperty("Accept", "application/json");
+        //conn.setRequestProperty("page", "1");
+        //conn.setRequestProperty("pageSize", "50000");
 
         int msg = conn.getResponseCode();
         if ( msg!= 200) {
             System.out.println("Error when trying to connect: http " + msg);
             throw new IOException(conn.getResponseMessage());
         }
-
         // Buffer the result into a string
         BufferedReader rd = new BufferedReader(
                 new InputStreamReader(conn.getInputStream()));
@@ -405,5 +413,45 @@ public class staticMethods {
         catch (ArrayIndexOutOfBoundsException e){
             return null;
         }
+    }
+
+    /**
+     * Makes the connection to Cisco.
+     * @param urlStr The url to get the data from (ip + /api/contextaware/v1/location/clients/)
+     * @param userName a valid username recognised by us
+     * @param userPW a valid password paired with a username
+     * @return the collected data in stringform
+     * @throws java.io.IOException if response code is not 200
+     */
+    public static String httpGet(String urlStr, String userName, String userPW, String pageNumber, String pageSize) throws java.io.IOException {
+        URL url = new URL(urlStr+"?page="+pageNumber+"&pageSize="+pageSize);
+        //String ip = getIP();
+        HttpURLConnection conn =
+                (HttpURLConnection) url.openConnection();
+        //Request type
+        conn.setRequestMethod("GET");
+        //Request headers
+        //conn.setRequestProperty("page", pageNumber);
+        //conn.setRequestProperty("pageSize", pageSize);
+        conn.setRequestProperty("Authorization", Authentication(userName, userPW));
+        conn.setRequestProperty("Accept", "application/json");
+
+        int msg = conn.getResponseCode();
+        if ( msg!= 200) {
+            System.out.println("Error when trying to connect: http " + msg);
+            throw new IOException(conn.getResponseMessage());
+        }
+        // Buffer the result into a string
+        BufferedReader rd = new BufferedReader(
+                new InputStreamReader(conn.getInputStream()));
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = rd.readLine()) != null) {
+            sb.append(line);
+        }
+        rd.close();
+
+        conn.disconnect();
+        return sb.toString();
     }
 }

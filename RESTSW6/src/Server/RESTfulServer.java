@@ -1,5 +1,6 @@
 package Server;
 import CertificateHandler.CertificateHandler;
+import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpServer;
 import diff_match_patchpack.diff_match_patch;
 
@@ -10,6 +11,7 @@ import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 import java.nio.charset.Charset;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.TreeSet;
 
 import static staticMethods.staticMethods.*;
@@ -26,7 +28,7 @@ public class RESTfulServer {
     private static String username; /** username */
     private static String password; /**password */
 
-    protected static final int port = 8090;
+    protected static final int port = 8080;
     protected static final int SizeofConnectionQueue = 1;
 
     // Gets the host address. Might cause trouble if several or no addresses returned.
@@ -74,9 +76,21 @@ public class RESTfulServer {
             if (!VerifyConnection(httpExchange)) {
                 return;
             }
+
             /// HERE IS RESPONSE
-            String response = CollectAllClients(username, password, ciscoIp);
-            System.out.println("Response:  " + response);
+            Headers requestHeaders = httpExchange.getRequestHeaders();
+            List<String> pagelist = requestHeaders.get("page");
+            List<String> pageSizelist = requestHeaders.get("pageSize");
+            String response;
+
+            if(pagelist.isEmpty() || pageSizelist.isEmpty()){
+                System.out.println("pagelist or pagesizelist is empty.");
+                response = CollectAllClients(username, password, ciscoIp);
+            }
+            else {
+                response = CollectAllClients(username, password, ciscoIp, pagelist.get(0), pageSizelist.get(0));
+            }
+            //System.out.println("Response:  " + response);
 
             httpExchange.sendResponseHeaders(200, response.length());
             OutputStream os = httpExchange.getResponseBody();

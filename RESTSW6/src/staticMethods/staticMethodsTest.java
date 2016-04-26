@@ -131,10 +131,10 @@ public class staticMethodsTest {
     @Test
     public void testObfuscateMacAddress() throws Exception {
         assertEquals("Testing 'Obfuscate' with AllClient",
-                "12:34:56", Obfuscate(allClient)
+                "OBFUSCATED", Obfuscate(allClient)
                         .getLocations().getEntries().get(0).getMacAddress());
         assertEquals("Testing 'Obfuscate' with SingleClient",
-                "12:34:56", Obfuscate(client)
+                "OBFUSCATED", Obfuscate(client)
                         .getWirelessClientLocation().getMacAddress());
         assertEquals("Testing 'Obfuscate' with no input",
                 "", "");

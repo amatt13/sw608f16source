@@ -28,7 +28,7 @@ class TCPClient {
         //System.out.println("FROM SERVER: " + httpGet("https://172.18.37.70/api/contextaware/v1/location/clients", "mse-proxy", "Mam0iDe9"));
         //System.out.println( httpGet("https://172.18.37.70/api/contextaware/v1/location/clients", "mse-proxy", "Mam0iDe9"));
 
-        System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients", "test", "works"));
+        System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients", "test", "works").substring(0, 1000));
         //System.out.println("FROM SERVER: " + httpGet("http://172.26.120.105:8080/api/contextaware/v1/location/clients", "test", "works"));
         // REMEMBER LOWER CASE HEX
         //System.out.println("FROM SERVER: " + httpGet("http://172.18.37.71:8080/api/contextaware/v1/location/clients/fe80:0000:0000:0000:8638:38ff:feff:c54b", "test", "works"));
@@ -53,12 +53,15 @@ class TCPClient {
         conn.setRequestProperty("Authorization", Authentication(userName, userPW));
         conn.setRequestMethod("GET");
         conn.setRequestProperty("Accept", "application/json");
+        conn.setRequestProperty("page", "2");
+        conn.setRequestProperty("pageSize","5000");
 
         if (conn.getResponseCode() != 200) {
             System.out.println(conn.getResponseCode());
             throw new IOException(conn.getResponseMessage());
         }
-
+        System.out.println(conn.getHeaderField("nextResourceURI"));
+        System.out.println(conn.getRequestProperty("nextResourceURI"));
         // Buffer the result into a string
         BufferedReader rd = new BufferedReader(
                 new InputStreamReader(conn.getInputStream()));
