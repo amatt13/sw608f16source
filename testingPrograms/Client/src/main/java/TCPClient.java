@@ -54,14 +54,12 @@ class TCPClient {
         conn.setRequestMethod("GET");
         conn.setRequestProperty("Accept", "application/json");
         conn.setRequestProperty("page", "2");
-        conn.setRequestProperty("pageSize","5000");
+        //conn.setRequestProperty("pageSize","5000");
 
         if (conn.getResponseCode() != 200) {
             System.out.println(conn.getResponseCode());
             throw new IOException(conn.getResponseMessage());
         }
-        System.out.println(conn.getHeaderField("nextResourceURI"));
-        System.out.println(conn.getRequestProperty("nextResourceURI"));
         // Buffer the result into a string
         BufferedReader rd = new BufferedReader(
                 new InputStreamReader(conn.getInputStream()));

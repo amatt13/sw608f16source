@@ -40,8 +40,8 @@ public class staticMethods {
         System.out.println("Received request from " + httpExchange.getRemoteAddress().getAddress());
 
         Headers headers = httpExchange.getRequestHeaders();
-        List<String> passphrase = headers.get("Authorization");
-        if (passphrase == null || !passphrase.get(0).equals("Basic dGVzdDp3b3Jrcw==")){ // test:works
+        String passphrase = headers.getFirst("Authorization");
+        if (passphrase == null || !passphrase.equals("Basic dGVzdDp3b3Jrcw==")){ // test:works
             httpExchange.sendResponseHeaders(401, 0);
             OutputStream os = httpExchange.getResponseBody();
             String response = "Cannot authenticate. Wrong username + password combo.";
@@ -62,9 +62,9 @@ public class staticMethods {
      */
     public static boolean VerifyHeaders(HttpExchange httpExchange) throws IOException {
         Headers headers = httpExchange.getRequestHeaders();
-        List<String> username = headers.get("Username");
-        List<String> passphrase = headers.get("Password");
-        List<String> ip = headers.get("url");
+        String username = headers.getFirst("Username");
+        String passphrase = headers.getFirst("Password");
+        String ip = headers.getFirst("url");
         if (passphrase == null || username == null|| ip == null){ // test:works
             httpExchange.sendResponseHeaders(401, 0);
             OutputStream os = httpExchange.getResponseBody();
@@ -255,8 +255,6 @@ public class staticMethods {
         //Request headers
         conn.setRequestProperty("Authorization", Authentication(userName, userPW));
         conn.setRequestProperty("Accept", "application/json");
-        //conn.setRequestProperty("page", "1");
-        //conn.setRequestProperty("pageSize", "50000");
 
         int msg = conn.getResponseCode();
         if ( msg!= 200) {
@@ -431,8 +429,6 @@ public class staticMethods {
         //Request type
         conn.setRequestMethod("GET");
         //Request headers
-        //conn.setRequestProperty("page", pageNumber);
-        //conn.setRequestProperty("pageSize", pageSize);
         conn.setRequestProperty("Authorization", Authentication(userName, userPW));
         conn.setRequestProperty("Accept", "application/json");
 

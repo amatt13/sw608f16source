@@ -76,19 +76,24 @@ public class RESTfulServer {
             if (!VerifyConnection(httpExchange)) {
                 return;
             }
-
             /// HERE IS RESPONSE
+
             Headers requestHeaders = httpExchange.getRequestHeaders();
-            List<String> pagelist = requestHeaders.get("page");
-            List<String> pageSizelist = requestHeaders.get("pageSize");
+            String page = requestHeaders.getFirst("page");
+            String pageSize = requestHeaders.getFirst("pageSize");
             String response;
 
-            if(pagelist.isEmpty() || pageSizelist.isEmpty()){
-                System.out.println("pagelist or pagesizelist is empty.");
+            if(pageSize == null && page != null){
+                response = CollectAllClients(username, password, ciscoIp, page, "5000");
+            }
+            else if(pageSize != null && page == null){
+                response = CollectAllClients(username, password, ciscoIp, "1", pageSize);
+            }
+            else if(pageSize == null && page == null){
                 response = CollectAllClients(username, password, ciscoIp);
             }
             else {
-                response = CollectAllClients(username, password, ciscoIp, pagelist.get(0), pageSizelist.get(0));
+                response = CollectAllClients(username, password, ciscoIp, page, pageSize);
             }
             //System.out.println("Response:  " + response);
 
